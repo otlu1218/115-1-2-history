@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="artifact-type" content="narrative">
+  <meta name="design-style" content="briefing">
+  <title>高一歷史第二次月考總複習：CH2 移民社會與 CH3 現代國家的形塑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+
+      /* Page and surfaces: warm stone-white paper (Briefing) */
+      --background: #faf9f5;
+      --surface-container-low: #ffffff;
+      --surface-container: #f1efe8;
+      --surface-container-high: #e6e2d6;
+
+      /* Ink */
+      --on-surface: #17181a;
+      --on-surface-variant: #56585c;
+
+      /* Rules */
+      --outline: #17181a;
+      --outline-variant: #dedad0;
+
+      /* Accents */
+      --primary: #17181a;
+      --on-primary: #faf9f5;
+      --primary-container: #f2b705;
+      --on-primary-container: #17181a;
+      --secondary: #1f4e5f;
+      --secondary-container: #e4eff2;
+      --tertiary: #785008;
+      --tertiary-container: #f5e6c4;
+      --error: #b42318;
+      --error-container: #fdeceb;
+      --on-error: #ffffff;
+
+      /* Data & semantic tokens */
+      --positive: #1f6b48;
+      --positive-container: #e6f4ec;
+      --warning: #9a6312;
+      --data-1: #1f4e5f;
+      --data-2: #d99000;
+      --data-3: #2b6e52;
+      --data-4: #b84a39;
+      --data-context: #c4bfb2;
+      --focus: #1f4e5f;
+
+      /* Fonts (Non-Latin TC listed first as required) */
+      --font-headline: 'Noto Serif TC', 'Source Serif 4', serif;
+      --font-body: 'Noto Sans TC', 'Plus Jakarta Sans', sans-serif;
+      --font-label: 'Geist Mono', 'Noto Sans TC', monospace;
+
+      /* Shape */
+      --rounded: 0.25rem;
+      --rounded-lg: 0.375rem;
+      --rounded-full: 0.25rem;
+
+      /* Style effects */
+      --section-rule: 1.5px solid var(--outline);
+      --card-border: 1px solid var(--outline-variant);
+      --badge-radius: 2px;
+      --heading-tracking: -0.015em;
+      --label-tracking: 0.06em;
+      --floating-shadow: 0 2px 8px color-mix(in srgb, var(--on-surface) 14%, transparent);
+
+      /* Type scale (Narrative) */
+      --display-size: clamp(2rem, 1.35rem + 2.4vw, 3.1rem);
+      --headline-size: clamp(1.5rem, 1.2rem + 1.1vw, 2.05rem);
+      --subhead-size: clamp(1.125rem, 1.05rem + 0.35vw, 1.325rem);
+      --body-size: clamp(1rem, 0.96rem + 0.18vw, 1.0625rem);
+      --label-size: 0.78rem;
+
+      /* Spacing scale */
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2.5rem;
+      --space-2xl: 4rem;
+      --space-3xl: 5.5rem;
+
+      /* Motion */
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+      --dur-micro: 120ms;
+      --dur-short: 220ms;
+      --dur-long: 420ms;
+    }
+
+    /* Base reset */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      overflow-x: clip;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background);
+      color: var(--on-surface);
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      line-height: 1.65;
+      scroll-behavior: smooth;
+    }
+    header { position: static !important; }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .page-grid {
+      display: grid;
+      gap: var(--space-xl);
+      padding: var(--space-lg) var(--space-lg) var(--space-3xl);
+      max-width: 1160px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .page-grid * { min-width: 0; }
+
+    /* Briefing Dossier Bar */
+    .dossier-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      border-bottom: var(--section-rule);
+      padding-bottom: var(--space-sm);
+      margin-bottom: var(--space-md);
+    }
+    .dossier-bar-left {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    .dossier-pill {
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.02em;
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: var(--badge-radius);
+      display: inline-flex;
+      align-items: center;
+    }
+    .dossier-meta {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      color: var(--on-surface-variant);
+      letter-spacing: var(--label-tracking);
+      text-transform: uppercase;
+    }
+    .dossier-meta-zh {
+      font-family: var(--font-body);
+      font-size: var(--label-size);
+      font-weight: 600;
+      color: var(--on-surface-variant);
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      font-family: var(--font-headline);
+      color: var(--on-surface);
+      margin: 0;
+    }
+    .hero-title {
+      font-size: var(--display-size);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: var(--heading-tracking);
+      max-width: 24ch;
+    }
+    .standfirst {
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: var(--subhead-size);
+      color: var(--secondary);
+      margin: var(--space-sm) 0 0;
+      max-width: 60ch;
+      line-height: 1.5;
+    }
+    .section-heading {
+      font-size: var(--headline-size);
+      font-weight: 700;
+      line-height: 1.22;
+      letter-spacing: var(--heading-tracking);
+    }
+    .section-sub {
+      color: var(--on-surface-variant);
+      margin: var(--space-xs) 0 0;
+      max-width: 65ch;
+    }
+    .index-num {
+      font-family: var(--font-label);
+      font-weight: 600;
+      font-size: var(--label-size);
+      color: var(--secondary);
+      background: var(--surface-container);
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: var(--badge-radius);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs);
+      min-height: 44px;
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--rounded);
+      font-weight: 600;
+      font-size: 0.9375rem;
+      cursor: pointer;
+      border: 1px solid var(--outline);
+      background: var(--surface-container-low);
+      color: var(--on-surface);
+      text-decoration: none;
+      transition: background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out), box-shadow var(--dur-micro) var(--ease-out);
+    }
+    .btn:hover:not(:disabled) {
+      background: var(--surface-container-high);
+    }
+    .btn:active:not(:disabled) {
+      transform: translateY(1px);
+    }
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+    }
+    .btn-primary:hover:not(:disabled) {
+      background: var(--secondary);
+      border-color: var(--secondary);
+    }
+    .btn-active {
+      background: var(--secondary);
+      color: var(--on-primary);
+      border-color: var(--secondary);
+    }
+    .btn-active:hover:not(:disabled) {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+    .btn-gold {
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+      border-color: var(--outline);
+    }
+    .btn-gold:hover:not(:disabled) {
+      background: var(--tertiary-container);
+    }
+    .btn-done {
+      background: var(--positive-container);
+      color: var(--positive);
+      border-color: var(--positive);
+    }
+
+    /* Top Control Ribbon & Jump Nav */
+    .study-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      margin-top: var(--space-lg);
+      padding: var(--space-md);
+      background: var(--surface-container);
+      border-top: var(--section-rule);
+      border-radius: var(--rounded-lg);
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+    }
+    .nav-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      min-height: 44px;
+      padding: var(--space-xs) var(--space-sm);
+      background: var(--surface-container-low);
+      border: var(--card-border);
+      border-radius: var(--rounded);
+      color: var(--on-surface);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+    .nav-pill:hover {
+      background: var(--surface-container-high);
+      border-color: var(--outline);
+    }
+    .nav-pill .code {
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      color: var(--secondary);
+      font-weight: 600;
+    }
+
+    .recall-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    /* Progress Overview Strip */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+    .figure-card {
+      background: var(--surface-container-low);
+      border: var(--card-border);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-md) var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .overview-card {
+      padding: var(--space-md);
+      transition: border-color var(--dur-micro) var(--ease-out);
+    }
+    .overview-card.is-reviewed {
+      border-color: var(--positive);
+      background: var(--positive-container);
+    }
+    .overview-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-xs);
+    }
+    .overview-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .overview-card p {
+      margin: 0;
+      font-size: 0.875rem;
+      color: var(--on-surface-variant);
+      line-height: 1.5;
+    }
+    .status-tag {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: var(--badge-radius);
+      background: var(--tertiary-container);
+      color: var(--tertiary);
+    }
+    .status-tag.done {
+      background: var(--positive);
+      color: var(--on-primary);
+    }
+
+    /* Progress Bar */
+    .progress-summary {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      background: var(--surface-container-low);
+      border: var(--card-border);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-md) var(--space-lg);
+      margin-bottom: var(--space-md);
+    }
+    .progress-track {
+      flex: 1 1 240px;
+      height: 10px;
+      background: var(--surface-container-high);
+      border-radius: var(--rounded);
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--secondary);
+      transition: width var(--dur-long) var(--ease-out);
+    }
+    .mono-stat {
+      font-family: var(--font-label);
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      color: var(--secondary);
+    }
+
+    /* Chapter Sections */
+    .chapter-section {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      padding-top: var(--space-lg);
+      scroll-margin-top: var(--space-lg);
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+    .concept-card {
+      background: var(--surface-container-low);
+      border: var(--card-border);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .concept-card-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      border-bottom: 1px solid var(--outline-variant);
+      padding-bottom: var(--space-sm);
+    }
+    .concept-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+    .concept-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--tertiary);
+      background: var(--tertiary-container);
+      padding: 2px 8px;
+      border-radius: var(--rounded);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .concept-list {
+      margin: 0;
+      padding-left: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+    .concept-list li {
+      line-height: 1.62;
+    }
+    .concept-note {
+      margin: var(--space-xs) 0 0;
+      font-size: 0.9rem;
+      color: var(--secondary);
+      font-weight: 500;
+      background: var(--secondary-container);
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: var(--rounded);
+    }
+
+    /* Aside / Exam Trap Callout */
+    .aside-box {
+      background: var(--surface-container);
+      border-top: var(--section-rule);
+      border-radius: 0 0 var(--rounded-lg) var(--rounded-lg);
+      padding: var(--space-md) var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .aside-title {
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+    }
+    .aside-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+    .aside-item strong {
+      color: var(--on-surface);
+    }
+    .aside-item p {
+      margin: var(--space-xs) 0 0;
+      font-size: 0.9375rem;
+      color: var(--on-surface-variant);
+    }
+
+    .chapter-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      padding-top: var(--space-xs);
+    }
+
+    /* Active Recall Key Term Masking */
+    .exam-key {
+      font-weight: 700;
+      color: var(--secondary);
+      border-bottom: 1.5px dashed var(--secondary);
+      padding: 0 2px;
+      border-radius: 2px;
+      transition: background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out);
+    }
+    body.recall-active .exam-key:not(.revealed) {
+      background-color: var(--on-surface);
+      color: transparent;
+      border-bottom-color: transparent;
+      cursor: pointer;
+      user-select: none;
+    }
+    body.recall-active .exam-key:not(.revealed):hover,
+    body.recall-active .exam-key:not(.revealed):focus-visible {
+      background-color: var(--secondary);
+    }
+    body.recall-active .exam-key.revealed {
+      background-color: var(--primary-container);
+      color: var(--on-primary-container);
+      border-bottom-style: solid;
+      cursor: pointer;
+    }
+
+    /* Timeline Module */
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+    }
+    .timeline-container {
+      background: var(--surface-container-low);
+      border: var(--card-border);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-lg);
+    }
+    .timeline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-left: 2px solid var(--outline-variant);
+      margin-left: var(--space-sm);
+      padding-left: var(--space-lg);
+    }
+    .timeline-item {
+      position: relative;
+      padding: var(--space-sm) 0 var(--space-md);
+      border-bottom: 1px solid var(--outline-variant);
+    }
+    .timeline-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    .timeline-dot {
+      position: absolute;
+      left: calc(-1 * var(--space-lg) - 6px);
+      top: 0.9rem;
+      width: 10px;
+      height: 10px;
+      background: var(--primary-container);
+      border: 2px solid var(--outline);
+      border-radius: var(--rounded-full);
+    }
+    .timeline-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-xs);
+    }
+    .timeline-year {
+      font-family: var(--font-label);
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--secondary);
+      background: var(--secondary-container);
+      padding: 2px 8px;
+      border-radius: var(--badge-radius);
+    }
+    .timeline-chapter {
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      color: var(--tertiary);
+      background: var(--tertiary-container);
+      padding: 2px 6px;
+      border-radius: var(--badge-radius);
+      font-weight: 600;
+    }
+    .timeline-title {
+      font-family: var(--font-headline);
+      font-weight: 700;
+      font-size: 1.08rem;
+      margin: 0;
+    }
+    .timeline-desc {
+      margin: var(--space-xs) 0 0;
+      font-size: 0.9375rem;
+      color: var(--on-surface-variant);
+      max-width: 68ch;
+    }
+
+    /* Comparison Matrices (Briefing Table) */
+    .table-card {
+      background: var(--surface-container-low);
+      border: var(--card-border);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-lg);
+      overflow-x: auto;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 640px;
+      font-size: 0.9375rem;
+    }
+    .data-table th {
+      text-align: left;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: var(--on-surface);
+      padding: var(--space-sm) var(--space-md);
+      border-top: var(--section-rule);
+      border-bottom: var(--section-rule);
+      background: var(--surface-container);
+      white-space: nowrap;
+    }
+    .data-table td {
+      padding: var(--space-sm) var(--space-md);
+      border-bottom: 1px solid var(--outline-variant);
+      vertical-align: top;
+      line-height: 1.55;
+    }
+    .data-table tr:last-child td {
+      border-bottom: var(--section-rule);
+    }
+    .table-lead {
+      font-weight: 700;
+      color: var(--secondary);
+      white-space: nowrap;
+    }
+
+    /* Quiz Module */
+    .quiz-dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      background: var(--surface-container-low);
+      border: var(--card-border);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-md) var(--space-lg);
+    }
+    .quiz-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-lg);
+    }
+    .quiz-stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .quiz-stat-label {
+      font-size: 0.78rem;
+      color: var(--on-surface-variant);
+      font-weight: 600;
+    }
+    .quiz-stat-val {
+      font-family: var(--font-headline);
+      font-weight: 700;
+      font-size: 1.5rem;
+      font-variant-numeric: tabular-nums;
+      line-height: 1.2;
+    }
+    .quiz-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+    .quiz-card {
+      background: var(--surface-container-low);
+      border: var(--card-border);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+    .quiz-card-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+    }
+    .quiz-q-text {
+      font-weight: 600;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .quiz-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+      gap: var(--space-sm);
+    }
+    .quiz-opt-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      text-align: left;
+      min-height: 44px;
+      padding: var(--space-sm) var(--space-md);
+      background: var(--background);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      cursor: pointer;
+      color: var(--on-surface);
+      line-height: 1.45;
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+    .quiz-opt-btn:hover:not(:disabled) {
+      background: var(--surface-container);
+      border-color: var(--outline);
+    }
+    .quiz-opt-btn.is-correct {
+      background: var(--positive-container);
+      border-color: var(--positive);
+      color: var(--on-surface);
+      font-weight: 600;
+    }
+    .quiz-opt-btn.is-wrong {
+      background: var(--error-container);
+      border-color: var(--error);
+      color: var(--on-surface);
+    }
+    .opt-letter {
+      font-family: var(--font-label);
+      font-weight: 700;
+      color: var(--secondary);
+      flex-shrink: 0;
+    }
+    .quiz-explanation {
+      background: var(--surface-container);
+      border-left: 4px solid var(--secondary);
+      padding: var(--space-sm) var(--space-md);
+      border-radius: 0 var(--rounded) var(--rounded) 0;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+    .quiz-explanation.is-error {
+      border-left-color: var(--error);
+    }
+    .quiz-explanation.is-success {
+      border-left-color: var(--positive);
+    }
+    .empty-state {
+      background: var(--surface-container-low);
+      border: var(--card-border);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-xl);
+      text-align: center;
+      color: var(--on-surface-variant);
+    }
+
+    /* Footer & Back-to-top */
+    .source-footer {
+      border-top: var(--section-rule);
+      padding-top: var(--space-lg);
+      color: var(--on-surface-variant);
+      font-size: 0.875rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+    }
+    .floating-top {
+      position: fixed;
+      right: var(--space-lg);
+      bottom: var(--space-lg);
+      z-index: 20;
+      box-shadow: var(--floating-shadow);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+      .page-grid {
+        padding: var(--space-md) var(--space-md) var(--space-3xl);
+        gap: var(--space-lg);
+      }
+      .concept-card, .figure-card, .timeline-container, .table-card, .quiz-card {
+        padding: var(--space-md);
+      }
+      .floating-top {
+        right: var(--space-md);
+        bottom: var(--space-md);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-grid" id="top">
+    <!-- HEADER / MASTHEAD -->
+    <header>
+      <div class="dossier-bar">
+        <div class="dossier-bar-left">
+          <span class="dossier-pill">高一歷史第二次月考總複習</span>
+          <span class="dossier-meta">TAIWAN HISTORY · CH2-1 TO CH3-3</span>
+        </div>
+        <span class="dossier-meta-zh" id="header-progress-badge">複習進度：0 / 5 章</span>
+      </div>
+      <h1 class="hero-title">族群移動、邊陲治理與現代化轉折</h1>
+      <p class="standfirst">從大航海時代的漢人移墾與分類械鬥、日治殖民統治與社會啟蒙，到戰後移民與當代多元社群——五個章節核心考點、時間軸、跨章節對照與 18 題實戰測驗一次掌握。</p>
+
+      <div class="study-controls">
+        <nav class="nav-links" aria-label="章節快速導航">
+          <a class="nav-pill" href="#ch2-1"><span class="code">CH2-1</span>大航海到清治移民</a>
+          <a class="nav-pill" href="#ch2-2"><span class="code">CH2-2</span>日治到戰後移民</a>
+          <a class="nav-pill" href="#ch3-1"><span class="code">CH3-1</span>清帝國的邊陲</a>
+          <a class="nav-pill" href="#ch3-2"><span class="code">CH3-2</span>日本殖民現代化</a>
+          <a class="nav-pill" href="#ch3-3"><span class="code">CH3-3</span>日治政治社會運動</a>
+          <a class="nav-pill" href="#timeline-sec"><span class="code">06</span>縱貫時間軸</a>
+          <a class="nav-pill" href="#matrix-sec"><span class="code">07</span>跨章對照表</a>
+          <a class="nav-pill" href="#quiz-sec"><span class="code">08</span>模擬測驗</a>
+        </nav>
+
+        <div class="recall-toolbar">
+          <button type="button" class="btn btn-gold" id="recall-toggle-btn" onclick="toggleRecallMode()">
+            開啟考前盲測遮罩
+          </button>
+          <button type="button" class="btn" id="recall-reset-btn" onclick="resetRevealedKeys()" style="display: none;">
+            重新遮蔽關鍵詞
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- OVERVIEW PROGRESS STRIP -->
+    <section aria-labelledby="overview-heading">
+      <div class="dossier-bar">
+        <div class="dossier-bar-left">
+          <span class="index-num">00</span>
+          <span class="dossier-meta-zh" id="overview-heading">複習儀表板與章節精熟度追蹤</span>
+        </div>
+        <span class="dossier-meta">PROGRESS TRACKER</span>
+      </div>
+
+      <div class="progress-summary">
+        <div>
+          <strong>考前雙向複習提示：</strong>點擊「開啟考前盲測遮罩」可將全頁藍色虛線關鍵詞轉為黑底，點擊單字即可自我抽考。
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="mastery-progress-fill"></div>
+        </div>
+        <div class="mono-stat" id="mastery-progress-text">0% 完成</div>
+      </div>
+
+      <div class="overview-grid" id="overview-cards">
+        <article class="figure-card overview-card" data-chapter="CH2-1">
+          <div class="overview-card-top">
+            <span class="index-num">CH2-1</span>
+            <span class="status-tag" id="badge-CH2-1">待複習</span>
+          </div>
+          <h3>大航海到清治的移民</h3>
+          <p>荷西招墾、鄭氏軍墾、清初渡臺禁令、羅漢腳、分類械鬥與開臺祖轉向。</p>
+          <a class="btn" href="#ch2-1">前往複習</a>
+        </article>
+
+        <article class="figure-card overview-card" data-chapter="CH2-2">
+          <div class="overview-card-top">
+            <span class="index-num">CH2-2</span>
+            <span class="status-tag" id="badge-CH2-2">待複習</span>
+          </div>
+          <h3>日治到戰後的移民</h3>
+          <p>國籍抉擇、官營移民村、1949遷臺、泰緬與大陳撤退、眷村榮民、新住民移工。</p>
+          <a class="btn" href="#ch2-2">前往複習</a>
+        </article>
+
+        <article class="figure-card overview-card" data-chapter="CH3-1">
+          <div class="overview-card-top">
+            <span class="index-num">CH3-1</span>
+            <span class="status-tag" id="badge-CH3-1">待複習</span>
+          </div>
+          <h3>清帝國的邊陲</h3>
+          <p>棄留爭議、消極防臺、三大民變、開港涉外事件、開山撫番與臺灣建省。</p>
+          <a class="btn" href="#ch3-1">前往複習</a>
+        </article>
+
+        <article class="figure-card overview-card" data-chapter="CH3-2">
+          <div class="overview-card-top">
+            <span class="index-num">CH3-2</span>
+            <span class="status-tag" id="badge-CH3-2">待複習</span>
+          </div>
+          <h3>日本殖民的現代化統治</h3>
+          <p>六三法總督專制、保甲警察、三階段政策演變、基礎調查、新式教育與生活。</p>
+          <a class="btn" href="#ch3-2">前往複習</a>
+        </article>
+
+        <article class="figure-card overview-card" data-chapter="CH3-3">
+          <div class="overview-card-top">
+            <span class="index-num">CH3-3</span>
+            <span class="status-tag" id="badge-CH3-3">待複習</span>
+          </div>
+          <h3>日治政治與社會運動</h3>
+          <p>同化或自治抉擇、議會請願、文化協會啟蒙、民眾黨與自治聯盟、農工與臺共。</p>
+          <a class="btn" href="#ch3-3">前往複習</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2-1 -->
+    <section class="chapter-section" id="ch2-1" aria-labelledby="ch2-1-title">
+      <div class="dossier-bar">
+        <div class="dossier-bar-left">
+          <span class="index-num">01</span>
+          <span class="dossier-meta-zh">CH2-1 大航海到清治時期的移民</span>
+        </div>
+        <span class="dossier-meta">17TH–19TH CENTURY</span>
+      </div>
+      <h2 class="section-heading" id="ch2-1-title">渡海拓墾、械鬥衝突與「開臺祖」在地認同的形成</h2>
+      <p class="section-sub">漢人大量移入始於荷蘭殖民招募，經鄭氏軍墾擴張，至清代雖受渡臺禁令限制，仍透過偷渡與在地通婚，逐步從「過客」轉化為紮根臺灣的宗族與地方家族。</p>
+
+      <div class="card-grid">
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>一、荷西與鄭氏時期的早期拓墾</h3>
+            <span class="concept-tag">移墾起點</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>荷蘭時期（1624–1662）：</strong><span class="exam-key" tabindex="0" role="button">荷蘭東印度公司</span>（VOC）為擴大農業生產與貿易稅收，大量招募中國東南沿海漢人來臺開墾，種植稻米與甘蔗，漢人成為拓墾主力。</li>
+            <li><strong>西班牙時期（1626–1642）：</strong>佔領北臺灣<span class="exam-key" tabindex="0" role="button">雞籠、淡水</span>一帶，主要著眼貿易與天主教傳教，漢人農業規模較小，後被荷蘭逐出。</li>
+            <li><strong>鄭氏時期（1661–1683）：</strong>鄭成功實施<span class="exam-key" tabindex="0" role="button">「寓兵於農」</span>的軍墾政策，土地分為<span class="exam-key" tabindex="0" role="button">官田、私田（文武官田）、營盤田</span>，開墾範圍由臺南擴及高屏、嘉南平原及彰化、北部少數據點。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>二、清初渡臺禁令、封山劃界與羅漢腳</h3>
+            <span class="concept-tag">高頻考點</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>渡臺禁令與偷渡：</strong>清初「為防臺而治臺」，規定漢人來臺須領照單、嚴禁攜帶家眷（至1874沈葆楨時期才正式徹底廢除）。因政策反覆，無照偷渡盛行，形成男多女少、成家不易的社會。</li>
+            <li><strong>婚俗與「羅漢腳」：</strong>因女性稀少，出現<span class="exam-key" tabindex="0" role="button">婚嫁重聘金</span>與<span class="exam-key" tabindex="0" role="button">童養媳</span>習俗；無恆產、無妻兒、工作不穩定的單身男子稱為<span class="exam-key" tabindex="0" role="button">「羅漢腳」</span>。</li>
+            <li><strong>雙重角色：</strong>官方視羅漢腳為社會動亂的潛在因素，但他們同時也是移墾社會<span class="exam-key" tabindex="0" role="button">拓墾先驅與主要勞動力</span>，對臺灣開發實有貢獻。</li>
+            <li><strong>封山劃界：</strong>設立<span class="exam-key" tabindex="0" role="button">土牛紅線（番界）</span>禁止漢人越界入山，旨在避免漢原衝突並防止漢人入山成為反清勢力。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>三、漢人聚落分佈與「分類械鬥」</h3>
+            <span class="concept-tag">族群衝突</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>拓墾路線與擇居：</strong>開發趨勢大致為<span class="exam-key" tabindex="0" role="button">由南而北、由西而東</span>；部分移民依原鄉生活習慣擇居（如泉人多居沿海港口、漳人多居平原丘陵、客家人多居丘陵臺地）。</li>
+            <li><strong>械鬥成因：</strong>閩、粵移民語言與習俗差異大，來臺後因土地、水源與商業資源競爭，常引發<span class="exam-key" tabindex="0" role="button">不同祖籍（閩粵、漳泉）</span>、<span class="exam-key" tabindex="0" role="button">不同姓氏</span>或<span class="exam-key" tabindex="0" role="button">職業同行</span>間的「分類械鬥」。</li>
+            <li><strong>族群遷徙案例：</strong>學者指出長期械鬥會迫使弱勢族群遷離，例如 19 世紀中期<span class="exam-key" tabindex="0" role="button">臺北新莊</span>一帶因械鬥頻仍，客家族群陸續遷往<span class="exam-key" tabindex="0" role="button">桃園、新竹</span>地區，未遷出者則多隱藏身分（福佬客現象）。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>四、原漢通婚與「唐山祖」到「開臺祖」</h3>
+            <span class="concept-tag">在地認同</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>原漢融合：</strong>清初男多女少，漢人男子多與平埔族群女性通婚，形成<span class="exam-key" tabindex="0" role="button">「有唐山公，無唐山媽」</span>的現象；長期接觸與通婚加速平埔族群土地、語言與文化流失。</li>
+            <li><strong>唐山祖宗族：</strong>早期移民與同鄉、同姓聚居，共同祭祀大陸家鄉世代較遠、聲名顯赫的同姓先人，成員間<span class="exam-key" tabindex="0" role="button">未必有真實血緣關係</span>，重在同姓連結與互助。</li>
+            <li><strong>開臺祖宗族：</strong>隨著世代繁衍、同血緣家族人口與財富增長，轉而祭祀<span class="exam-key" tabindex="0" role="button">來臺第一代祖先</span>並建祠堂家廟，反映移民逐步轉向<span class="exam-key" tabindex="0" role="button">在地認同</span>。</li>
+            <li><strong>「一天下，兩林家」：</strong>透過科舉、軍功或捐納崛起的地方家族——<span class="exam-key" tabindex="0" role="button">霧峰林家</span>（林文察平定戴潮春與太平天國、林朝棟清法戰爭立功並協助開山撫番）與<span class="exam-key" tabindex="0" role="button">板橋林家</span>（林平侯捐納為官、創「林本源」商號、林維源任撫墾大臣）。</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="aside-box">
+        <div class="aside-title">CH2-1 月考必殺辨析</div>
+        <div class="aside-grid">
+          <div class="aside-item">
+            <strong>「唐山祖」vs.「開臺祖」</strong>
+            <p>考試最愛考「血緣」與「認同轉折」：唐山祖＝同姓未必同血緣、寄託原鄉；開臺祖＝同血緣家族、建立祠堂家廟、象徵落地生根的在地認同。</p>
+          </div>
+          <div class="aside-item">
+            <strong>霧峰林家 vs. 板橋林家</strong>
+            <p>兩大家族皆善用官商關係累積聲望：板橋林家起於捐納與「林本源」商號廣置田產；霧峰林家（下厝）以軍功著稱，至日治（頂厝林獻堂）則領袖非武力抗日與議會請願運動。</p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="chapter-footer">
+        <span class="dossier-meta-zh">完成本節複習後可點擊標記，自動保存進度</span>
+        <button type="button" class="btn" id="review-btn-CH2-1" onclick="toggleChapterReview('CH2-1')">標記 CH2-1 為已精熟</button>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2-2 -->
+    <section class="chapter-section" id="ch2-2" aria-labelledby="ch2-2-title">
+      <div class="dossier-bar">
+        <div class="dossier-bar-left">
+          <span class="index-num">02</span>
+          <span class="dossier-meta-zh">CH2-2 日治到戰後的移民</span>
+        </div>
+        <span class="dossier-meta">1895–PRESENT</span>
+      </div>
+      <h2 class="section-heading" id="ch2-2-title">殖民移民村、戰後軍民撤退與當代多元島嶼</h2>
+      <p class="section-sub">政權更迭主導了 20 世紀臺灣的幾波大型人口移動：日人農業拓墾與戰時動員、1949 年代百萬軍民遷臺與特殊安置聚落，以及戰後工業化帶動的城鄉遷移與跨國新住民社群。</p>
+
+      <div class="card-grid">
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>一、日治時期國籍抉擇與日本農業移民</h3>
+            <span class="concept-tag">殖民移民</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>1895 國籍抉擇：</strong>依《馬關條約》，5 月 8 日生效後 <span class="exam-key" tabindex="0" role="button">2 年內</span>臺澎人民可自由選擇國籍，期滿未離臺者自動成為日本國民。因經濟因素僅約 <span class="exam-key" tabindex="0" role="button">6,400 多人（約 0.23%）</span>離臺。</li>
+            <li><strong>私營移民村：</strong>1899 年設於花蓮壽豐的<span class="exam-key" tabindex="0" role="button">「賀田村」</span>為首座日資私營移民村，因缺資金與經驗而失敗。</li>
+            <li><strong>前期官營移民（1910 年代）：</strong>為解決日本人口過剩並鞏固統治國防與同化，以東部為重心；1910 年設首座官營<span class="exam-key" tabindex="0" role="button">「吉野村」</span>（今花蓮吉安，留有慶修院）。因原為阿美族<span class="exam-key" tabindex="0" role="button">七腳川社</span>所在地引發衝突，加上氣候、衛生問題成效有限。</li>
+            <li><strong>後期官營移民（1930 年代）：</strong>受 1923 關東大地震與 1929 世界經濟大恐慌衝擊，1932 年後西部河川整治完成，重心移往<span class="exam-key" tabindex="0" role="button">西部地區（彰化、高雄等）</span>，種植菸草等經濟作物，配合南進與皇民化政策作為農村示範。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>二、殖民體制下臺灣人民的內外流動</h3>
+            <span class="concept-tag">島內與海外</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>西部赴東部拓墾：</strong>日商公司與官方招募西部人赴花東開墾，其中<span class="exam-key" tabindex="0" role="button">新竹州（桃竹苗）客家人</span>因生活條件較嚴苛遷徙最多，受僱赴花蓮鳳林、玉里及臺東鹿野、池上製樟腦、蔗糖、菸草，並形成<span class="exam-key" tabindex="0" role="button">林田山林場</span>聚落。</li>
+            <li><strong>南部港市移動：</strong>高雄築港與港口發展吸引大量<span class="exam-key" tabindex="0" role="button">澎湖、臺南人</span>移居工作。</li>
+            <li><strong>求學與戰時動員：</strong>高等教育機構不足且存在差別待遇，臺籍菁英赴<span class="exam-key" tabindex="0" role="button">日本</span>留學；1930 年代後期隨對外擴張與戰時動員，大批臺人以<span class="exam-key" tabindex="0" role="button">軍伕、志願兵、看護婦</span>或受高教尋求發展身分前往<span class="exam-key" tabindex="0" role="button">滿洲國、中國、東南亞</span>。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>三、戰後（1949）與 1950 年代軍民撤退安置</h3>
+            <span class="concept-tag">高頻考點</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>1949 大遷徙：</strong>日治末期臺灣約 600 萬人；1949 國共內戰失利，中央政府遷臺帶入<span class="exam-key" tabindex="0" role="button">上百萬軍公教人員與眷屬</span>，劇烈改變人口結構。</li>
+            <li><strong>東南亞撤離（1953 起）：</strong>退入越南<span class="exam-key" tabindex="0" role="button">富國島</span>國軍約 3 萬人在美軍協調下撤臺；退往泰緬邊境者 1953 起撤回約 1 萬多人安置於桃園、高雄、屏東，仍有部分滯留泰北<span class="exam-key" tabindex="0" role="button">美斯樂</span>並遺留無國籍後代問題。</li>
+            <li><strong>韓戰反共義士：</strong>1954 年 1 月 23 日，約 <span class="exam-key" tabindex="0" role="button">1 萬 4 千多名</span>不願遣返中共的韓戰戰俘選擇來臺，訂該日為<span class="exam-key" tabindex="0" role="button">「一二三自由日」</span>。</li>
+            <li><strong>大陳義胞（1955）：</strong>一江山島與大陳島危急時，美軍艦協助撤出二萬多名大陳軍民，政府於各地興建<span class="exam-key" tabindex="0" role="button">「大陳新村」</span>安置。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>四、眷村、榮民、城鄉遷移與當代新移民</h3>
+            <span class="concept-tag">族群與當代</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>眷村與榮民：</strong>匯聚各省軍眷的「眷村」（如高雄岡山空軍眷村、海軍明德新村）初期與外界少互動；退役國軍稱「榮民」，參與<span class="exam-key" tabindex="0" role="button">中部橫貫公路、桃園石門水庫</span>建設與花東兵工墾區，部分因法令限制婚配而孤獨終老成為弱勢。</li>
+            <li><strong>省籍情結與消融：</strong>二二八事件、厚待外省籍觀感、<span class="exam-key" tabindex="0" role="button">身分證註記本籍</span>影響資源分配及眷村隔閡曾深化矛盾；後因<span class="exam-key" tabindex="0" role="button">就學、就業、通婚</span>與都市交流日漸消融。</li>
+            <li><strong>城鄉移民（1970 年代起）：</strong>工商業起飛使農村人口大量湧入都市與工業區，造成<span class="exam-key" tabindex="0" role="button">城鄉失衡與農村老化</span>。</li>
+            <li><strong>新住民與國際移工：</strong>1980 年代起東南亞與中國大陸配偶（<span class="exam-key" tabindex="0" role="button">新住民</span>）漸增；1990 年代起因應缺工引進東南亞<span class="exam-key" tabindex="0" role="button">國際移工</span>從事勞動與看護，注入多元文化。</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="aside-box">
+        <div class="aside-title">CH2-2 月考必殺辨析</div>
+        <div class="aside-grid">
+          <div class="aside-item">
+            <strong>日治前期 vs. 後期官營移民重心</strong>
+            <p>1910年代前期在「東部」（吉野村、七腳川社衝突）；1930年代後期改往「西部」（彰化、高雄）且栽種菸草等經濟作物，配合大恐慌後紓解人口與示範農村同化。</p>
+          </div>
+          <div class="aside-item">
+            <strong>1950 年代三大特殊撤退群體</strong>
+            <p>注意年份與對應詞：1953 泰緬與富國島撤離；1954/1/23 韓戰「一二三自由日」（反共義士）；1955 浙江外海「大陳義胞」（大陳新村）。</p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="chapter-footer">
+        <span class="dossier-meta-zh">掌握日治移民轉向與戰後三大撤退族群了嗎？</span>
+        <button type="button" class="btn" id="review-btn-CH2-2" onclick="toggleChapterReview('CH2-2')">標記 CH2-2 為已精熟</button>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3-1 -->
+    <section class="chapter-section" id="ch3-1" aria-labelledby="ch3-1-title">
+      <div class="dossier-bar">
+        <div class="dossier-bar-left">
+          <span class="index-num">03</span>
+          <span class="dossier-meta-zh">CH3-1 清帝國的邊陲</span>
+        </div>
+        <span class="dossier-meta">1683–1895</span>
+      </div>
+      <h2 class="section-heading" id="ch3-1-title">從「為防臺而治臺」到開山撫番與臺灣建省</h2>
+      <p class="section-sub">清代治臺兩百餘年以 1860 年代開港通商與 1874 年牡丹社事件為關鍵分水嶺：前期采消極防範卻民變頻傳；後期為抵禦外患轉為積極建設與設省，行政區劃也隨開發腳步擴張。</p>
+
+      <div class="card-grid">
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>一、棄留爭議與「為防臺而治臺」消極政策</h3>
+            <span class="concept-tag">清治前期</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>棄留之議（1683）：</strong>鄭克塽降清後，多數官員主張棄臺遷民；<span class="exam-key" tabindex="0" role="button">施琅</span>上〈恭陳臺灣棄留疏〉，力陳臺灣戰略地位重要、物產豐饒，若棄之將成外國或不法之徒據點危及東南四省，康熙遂於 <span class="exam-key" tabindex="0" role="button">1684 年</span>納入版圖。</li>
+            <li><strong>五大消極防範措施：</strong><span class="exam-key" tabindex="0" role="button">渡臺禁令、封山劃界、禁止築城、限制販鐵</span>（防製兵器），並採<span class="exam-key" tabindex="0" role="button">官員輪調與班兵制</span>（三年一調，防官兵結合地方叛亂）。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>二、民變頻生與清廷「以臺制臺」平亂策略</h3>
+            <span class="concept-tag">三大民變</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>民變背景：</strong>來臺官吏貪瀆、班兵紀律不佳、男女比例失衡、羅漢腳充斥與天地會等會黨勢力強大，常引發官逼民反。</li>
+            <li><strong>三大民變：</strong><span class="exam-key" tabindex="0" role="button">朱一貴事件、林爽文事件、戴潮春事件</span>。</li>
+            <li><strong>族群牽制（以林爽文事件為例）：</strong>林爽文原籍福建漳州、庇護天地會黨人起事，主力為漳籍；清廷除了派<span class="exam-key" tabindex="0" role="button">福康安</span>率大軍平定，更利用族群對立意識，結合<span class="exam-key" tabindex="0" role="button">泉籍人士、粵籍客家人、平埔族</span>共同圍剿。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>三、治臺政策轉趨積極的背景與關鍵人物</h3>
+            <span class="concept-tag">清治後期</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>外患衝擊（1860–1874）：</strong>1860 年代開港通商後，外商非法走私並深入後山「番地」引發摩擦；外國船難遭原住民攻擊引發<span class="exam-key" tabindex="0" role="button">羅妹號事件</span>與 1874 年<span class="exam-key" tabindex="0" role="button">牡丹社事件</span>（日本出兵並質疑清廷對番地主權）。</li>
+            <li><strong>沈葆楨：</strong>1874 年任欽差大臣來臺加強防務，推行<span class="exam-key" tabindex="0" role="button">「開山撫番」</span>，正式開啟積極治臺（並廢除渡臺禁令、設臺北府等）。</li>
+            <li><strong>丁日昌：</strong>繼沈葆楨之後，以福建巡撫身分持續在臺推動電報等積極改革。</li>
+            <li><strong>劉銘傳與臺灣建省：</strong>1884 <span class="exam-key" tabindex="0" role="button">清法戰爭</span>波及臺灣，清廷更意識臺灣海防樞紐地位，於 <span class="exam-key" tabindex="0" role="button">1885 年宣布建省</span>，督辦軍務的<span class="exam-key" tabindex="0" role="button">劉銘傳</span>成為首任巡撫，大力推動鐵路、電報、郵政、清賦、撫墾等新政，使臺灣成為晚清相當近代化的行省（後任<span class="exam-key" tabindex="0" role="button">邵友濂</span>因財政緊縮使多項新政停擺）。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>四、行政區劃演變（由南而北、由西而東）</h3>
+            <span class="concept-tag">行政空間</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>核心規律：</strong>清代地方行政區劃<span class="exam-key" tabindex="0" role="button">始終落後於民間開發</span>，常因民變、海盜或涉外問題才增設機構。</li>
+            <li><strong>1684 清初：</strong>僅設<span class="exam-key" tabindex="0" role="button">一府三縣</span>（臺灣府隸福建省，轄臺灣、鳳山、諸羅）。</li>
+            <li><strong>雍正年間：</strong>考量民變與防務，在北部與澎湖增設行政區（彰化縣、淡水廳、澎湖廳）。</li>
+            <li><strong>1812（嘉慶 17 年）：</strong>今宜蘭地區漢人移墾日增且受海盜侵擾，增設<span class="exam-key" tabindex="0" role="button">噶瑪蘭廳</span>。</li>
+            <li><strong>1885 建省後調整：</strong>隨北臺經濟起飛與開山撫番，最終調整為<span class="exam-key" tabindex="0" role="button">三府一直隸州十一縣四廳</span>（臺北府、臺灣府、臺南府、臺東直隸州）。</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="aside-box">
+        <div class="aside-title">CH3-1 月考必殺辨析</div>
+        <div class="aside-grid">
+          <div class="aside-item">
+            <strong>清法戰爭 vs. 牡丹社事件</strong>
+            <p>牡丹社事件（1874）促成「開山撫番」與沈葆楨積極治臺（設臺北府）；清法戰爭（1884）直接促成 1885 年「臺灣建省」與劉銘傳擔任首任巡撫。</p>
+          </div>
+          <div class="aside-item">
+            <strong>噶瑪蘭廳（1812）的歷史意義</strong>
+            <p>象徵清代官方勢力正式跨出西部，向東北部的宜蘭地區擴張（由西而東開發的早期節點）。</p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="chapter-footer">
+        <span class="dossier-meta-zh">記得區分沈葆楨與劉銘傳的時代事件與建樹！</span>
+        <button type="button" class="btn" id="review-btn-CH3-1" onclick="toggleChapterReview('CH3-1')">標記 CH3-1 為已精熟</button>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3-2 -->
+    <section class="chapter-section" id="ch3-2" aria-labelledby="ch3-2-title">
+      <div class="dossier-bar">
+        <div class="dossier-bar-left">
+          <span class="index-num">04</span>
+          <span class="dossier-meta-zh">CH3-2 日本殖民的現代化統治</span>
+        </div>
+        <span class="dossier-meta">1895–1945</span>
+      </div>
+      <h2 class="section-heading" id="ch3-2-title">總督專制、警察保甲網與三階段統治策略演進</h2>
+      <p class="section-sub">日本將臺灣人排除於日本憲法保障之外，建立結合警察與保甲的嚴密地方控制，並隨國際局勢與日本國內思潮，分三階段調整統治方針，同時導入現代教育、守時、衛生與法制觀念。</p>
+
+      <div class="card-grid">
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>一、總督專制體制與地方基層控制網</h3>
+            <span class="concept-tag">統治架構</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>《六三法》體制：</strong>臺灣人被排除於日本憲法保障之外，總督集<span class="exam-key" tabindex="0" role="button">行政、立法、司法、軍事</span>大權於一身（後延續為《三一法》、《法三號》）。</li>
+            <li><strong>威壓法令：</strong>頒布<span class="exam-key" tabindex="0" role="button">《匪徒刑罰令》</span>嚴厲鎮壓武裝抗日。</li>
+            <li><strong>警察 × 保甲 × 壯丁團：</strong>透過街庄制度結合<span class="exam-key" tabindex="0" role="button">警察制度與保甲組織</span>（由清代舊制改造，採連坐法）使國家權力深入基層；並由保甲選出強壯男子組成<span class="exam-key" tabindex="0" role="button">「壯丁團」</span>協助壓制抗日、消防、勞役，戰時更成為動員基層組織。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>二、第一與第二階段統治策略（1895–1936）</h3>
+            <span class="concept-tag">政策演變</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>1. 殖民地特殊統治（1895–1919）：</strong>初期武裝抗日頻仍，第三任總督乃木希典「三段警備制」失敗且財政危機嚴重。1898 年<span class="exam-key" tabindex="0" role="button">兒玉源太郎與後藤新平</span>掌政，標榜生物演化原則與<span class="exam-key" tabindex="0" role="button">「無方針主義」</span>，先對臺人風俗習慣進行調查、尊重傳統以拉攏人心，進而推行土地調查、戶口調查、度量衡與幣制統一，奠定殖民經濟基礎。</li>
+            <li><strong>2. 內地延長主義（1919–1936）：</strong>受一戰後<span class="exam-key" tabindex="0" role="button">民族自決思潮與日本大正民主</span>鼓舞，臺人民族運動蓬勃。1919 年首任文官總督<span class="exam-key" tabindex="0" role="button">田健治郎</span>標榜<span class="exam-key" tabindex="0" role="button">「日臺融合，一視同仁」</span>，採同化方針、頒布<span class="exam-key" tabindex="0" role="button">「法三號」</span>並一定程度允許政治結社以懷柔臺人（但日臺差別待遇依舊明顯）。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>三、第三階段：皇民化運動（1937–1945）</h3>
+            <span class="concept-tag">戰爭動員</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>背景轉折：</strong>1930 年代世界經濟大恐慌促使日本軍部抬頭並對外侵略；1936 年因應中日戰爭情勢，再度派任軍人<span class="exam-key" tabindex="0" role="button">小林躋造</span>為總督。</li>
+            <li><strong>三大治臺方針：</strong><span class="exam-key" tabindex="0" role="button">「皇民化」、「工業化」、「南進基地化」</span>。</li>
+            <li><strong>皇民化核心內涵（1937 起）：</strong>目標改變臺灣人政治與文化認同，成為效忠天皇的子民，包含<span class="exam-key" tabindex="0" role="button">「國語」（日語）運動、推行日本神道教信仰、改日式姓名、志願兵制度</span>。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>四、現代化教育與新式生活習慣的建立</h3>
+            <span class="concept-tag">社會轉型</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>教育差別與突破：</strong>日治初期臺人公學校畢業後缺乏中等教育（僅有師範、醫學校等）。1915 年在臺籍士紳努力下設立專收臺人的<span class="exam-key" tabindex="0" role="button">臺中中學校</span>；1922 年配合同化政策公布新臺灣教育令，實施中學以上<span class="exam-key" tabindex="0" role="button">「日臺共學」</span>並增設實業學校培養基礎技術人才。</li>
+            <li><strong>守時與守法：</strong>1896 年實施<span class="exam-key" tabindex="0" role="button">標準時間</span>（透過學校、交通時刻表與廣播養成守時）；引進西方司法制度並靠警察保甲落實法治觀念。</li>
+            <li><strong>革除舊習與婦女地位：</strong>1915 年將<span class="exam-key" tabindex="0" role="button">禁止纏足</span>列入保甲規約並全面推動<span class="exam-key" tabindex="0" role="button">斷髮運動</span>；女子解纏足後便於投入經濟生產，加上受教機會增加，婦女地位漸升。</li>
+            <li><strong>公共衛生：</strong>建設自來水、推動防疫，並由保甲發起<span class="exam-key" tabindex="0" role="button">捕鼠與社區清潔運動</span>，革除隨地便溺吐痰習慣，使日治中後期傳染病大幅減少。</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="aside-box">
+        <div class="aside-title">CH3-2 月考必殺辨析</div>
+        <div class="aside-grid">
+          <div class="aside-item">
+            <strong>「無方針主義」不是沒方針</strong>
+            <p>後藤新平的無方針主義＝「生物學原則」（先做徹底的土地、戶口與舊慣調查，因地制宜、順應環境建立有效殖民統治，不照搬日本內地法制）。</p>
+          </div>
+          <div class="aside-item">
+            <strong>「內地延長主義」vs.「皇民化運動」</strong>
+            <p>兩者皆具同化色彩，但內地延長（1919–1936）採溫和懷柔、日臺共學與法三號，允許有限政治結社；皇民化（1937–1945）為戰時動員，強制改姓名、推神道教、志願兵與高壓統治。</p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="chapter-footer">
+        <span class="dossier-meta-zh">複習完畢後請檢視三階段年代與代表總督</span>
+        <button type="button" class="btn" id="review-btn-CH3-2" onclick="toggleChapterReview('CH3-2')">標記 CH3-2 為已精熟</button>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3-3 -->
+    <section class="chapter-section" id="ch3-3" aria-labelledby="ch3-3-title">
+      <div class="dossier-bar">
+        <div class="dossier-bar-left">
+          <span class="index-num">05</span>
+          <span class="dossier-meta-zh">CH3-3 日治時期的政治與社會運動</span>
+        </div>
+        <span class="dossier-meta">1914–1937</span>
+      </div>
+      <h2 class="section-heading" id="ch3-3-title">從同化與自治抉擇，到政黨結社與農工抗爭</h2>
+      <p class="section-sub">1920 年代「大正民主」與全球「民族自決」思潮下，接受新式教育的臺灣本土菁英（醫師、教師、律師）不再採武裝抗日，而是透過請願、文化啟蒙、政黨與農工組織向總督府爭取權益。</p>
+
+      <div class="card-grid">
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>一、知識分子覺醒與「同化／自治」抉擇</h3>
+            <span class="concept-tag">思想轉折</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>時代背景：</strong>日本大正年間（1912–1926）民主思潮與摩登「狂飆二十年代」影響，受新式教育的臺灣青年崛起，成為社會中堅。</li>
+            <li><strong>臺灣同化會（1914）：</strong><span class="exam-key" tabindex="0" role="button">林獻堂</span>在日本政治家<span class="exam-key" tabindex="0" role="button">板垣退助</span>支持下籌組，訴求消除日臺差別待遇，旋即遭總督府解散，卻埋下民族運動種子。</li>
+            <li><strong>新民會（1920）：</strong>受一戰<span class="exam-key" tabindex="0" role="button">民族自決</span>與中國<span class="exam-key" tabindex="0" role="button">五四運動</span>鼓舞，東京留學生組成，主張啟發民智與<span class="exam-key" tabindex="0" role="button">撤廢《六三法》</span>。</li>
+            <li><strong>臺灣議會設置請願運動（1921–1934）：</strong>從撤廢六三法轉向強調臺灣特殊性的<span class="exam-key" tabindex="0" role="button">自治主義</span>路線，連續請願 15 次（1923 年「臺灣議會期成同盟會」曾遭搜捕，即治警事件）。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>二、臺灣文化協會與「新文協」路線分裂</h3>
+            <span class="concept-tag">啟蒙運動</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>臺灣文化協會（1921）：</strong>林獻堂、蔣渭水等人成立，透過<span class="exam-key" tabindex="0" role="button">讀報社、文化演講會、夏季學校</span>（如霧峰夏季學校）與發行刊物啟發民智、批判舊習。</li>
+            <li><strong>1927 年分裂：</strong>內部因路線分歧（林獻堂、蔣渭水主張跨階級合法抗爭 vs. <span class="exam-key" tabindex="0" role="button">連溫卿</span>主張無產階級農工運動），1927 年由左傾的連溫卿取得主導權，稱為<span class="exam-key" tabindex="0" role="button">「新文協」</span>，積極推動農民與工人運動。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>三、臺灣民眾黨與臺灣地方自治聯盟</h3>
+            <span class="concept-tag">政黨與選舉</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>臺灣民眾黨（1927）：</strong>文協分裂後，蔣渭水、林獻堂另組，為<span class="exam-key" tabindex="0" role="button">臺灣史上第一個合法政黨</span>。主張廢除鴉片專賣、提高臺人參政機會，並數次向<span class="exam-key" tabindex="0" role="button">國際聯盟</span>控訴總督府鴉片政策與<span class="exam-key" tabindex="0" role="button">霧社事件</span>暴行。</li>
+            <li><strong>臺灣地方自治聯盟（1930）：</strong>因蔣渭水改走農工路線，林獻堂、蔡培火、楊肇嘉理念不合退黨另組，專注要求州、市街庄協議會員改為民選並提高議決權。</li>
+            <li><strong>1935 年首次民選：</strong>總督府開放第一屆市會及街庄協議會員<span class="exam-key" tabindex="0" role="button">半數民選</span>。雖受財產、年齡、性別限制且無實質議決權，卻是臺人首次實際參與現代民主選舉，極具啟蒙意義。</li>
+          </ul>
+        </article>
+
+        <article class="concept-card">
+          <div class="concept-card-head">
+            <h3>四、農工群眾抗爭、臺灣共產黨與鎮壓</h3>
+            <span class="concept-tag">左翼與瓦解</span>
+          </div>
+          <ul class="concept-list">
+            <li><strong>二林事件（1925）：</strong>製糖會社長期剝削蔗農，<span class="exam-key" tabindex="0" role="button">李應章</span>等人組「二林蔗農組合」爭取甘蔗收購價格談判而爆發衝突，遭警方搜捕，揭開全臺農工抗爭序幕。</li>
+            <li><strong>農工大串聯：</strong><span class="exam-key" tabindex="0" role="button">簡吉</span>等人成立<span class="exam-key" tabindex="0" role="button">「臺灣農民組合」</span>，蔣渭水成立<span class="exam-key" tabindex="0" role="button">「臺灣工友總聯盟」</span>，形成南北串聯。</li>
+            <li><strong>臺灣共產黨（1928）：</strong><span class="exam-key" tabindex="0" role="button">謝雪紅</span>等人在上海成立「日本共產黨臺灣民族支部」（通稱臺共），被視為非法組織而依附合法團體，漸取得農民組合主導權。</li>
+            <li><strong>1931 大鎮壓與瓦解：</strong>總督府大規模追捕臺共成員，牽連眾多政治社會領袖入獄或潛逃海外，文協等異議組織幾乎瓦解殆盡。</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="aside-box">
+        <div class="aside-title">CH3-3 月考必殺辨析</div>
+        <div class="aside-grid">
+          <div class="aside-item">
+            <strong>路線排序口訣（1914 → 1935）</strong>
+            <p>1914 同化會（求平等待遇）→ 1920 新民會（撤廢六三法）→ 1921 議會請願 &amp; 文協（自治啟蒙）→ 1927 分裂為新文協（左）與民眾黨（第一個合法政黨）→ 1930 地方自治聯盟（專推民選）→ 1935 半數民選。</p>
+          </div>
+          <div class="aside-item">
+            <strong>1935 年選舉的「雙面性」</strong>
+            <p>考題常考限制與意義：限制＝「僅半數民選、有財產/年齡/性別門檻、無實質議決權」；意義＝「臺灣史上第一次參與現代民主政治選舉運作」。</p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="chapter-footer">
+        <span class="dossier-meta-zh">完成五個章節！現在可前往時間軸、對照表與模擬測驗</span>
+        <button type="button" class="btn" id="review-btn-CH3-3" onclick="toggleChapterReview('CH3-3')">標記 CH3-3 為已精熟</button>
+      </div>
+    </section>
+
+    <!-- TIMELINE MODULE -->
+    <section class="chapter-section" id="timeline-sec" aria-labelledby="timeline-heading">
+      <div class="dossier-bar">
+        <div class="dossier-bar-left">
+          <span class="index-num">06</span>
+          <span class="dossier-meta-zh" id="timeline-heading">跨章節縱貫歷史時間軸（1624–1990s）</span>
+        </div>
+        <span class="dossier-meta">CHRONOLOGICAL SYNTHESIS</span>
+      </div>
+      <h2 class="section-heading">將五個章節串成一條因果線</h2>
+      <p class="section-sub">選擇特定主題篩選事件，觀察「統治體制轉折」如何連動「人口移動」與「人民抗爭」的發生年代。</p>
+
+      <div class="filter-row" role="group" aria-label="時間軸主題篩選">
+        <button type="button" class="btn btn-active" data-tl-filter="all" onclick="setTimelineFilter('all')">全部年代（24 筆）</button>
+        <button type="button" class="btn" data-tl-filter="migration" onclick="setTimelineFilter('migration')">移民與族群</button>
+        <button type="button" class="btn" data-tl-filter="qing" onclick="setTimelineFilter('qing')">清代治理與建省</button>
+        <button type="button" class="btn" data-tl-filter="jp-rule" onclick="setTimelineFilter('jp-rule')">日治統治與現代化</button>
+        <button type="button" class="btn" data-tl-filter="movement" onclick="setTimelineFilter('movement')">日治政治社會運動</button>
+        <button type="button" class="btn" data-tl-filter="postwar" onclick="setTimelineFilter('postwar')">戰後與當代移民</button>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-list" id="timeline-list"></div>
+      </div>
+    </section>
+
+    <!-- CROSS-CHAPTER COMPARISON MATRICES -->
+    <section class="chapter-section" id="matrix-sec" aria-labelledby="matrix-heading">
+      <div class="dossier-bar">
+        <div class="dossier-bar-left">
+          <span class="index-num">07</span>
+          <span class="dossier-meta-zh" id="matrix-heading">跨章節考點對照總表</span>
+        </div>
+        <span class="dossier-meta">COMPARATIVE MATRICES</span>
+      </div>
+      <h2 class="section-heading">易混淆制度、人物與政黨一次比對</h2>
+      <p class="section-sub">月考非選題與比較型單選題最常從這四張表出題，切換檢視不同維度的結構比較。</p>
+
+      <div class="filter-row" role="group" aria-label="對照表切換">
+        <button type="button" class="btn btn-active" data-mx-tab="migration" onclick="setMatrixTab('migration')">表一：歷代移民與族群政策</button>
+        <button type="button" class="btn" data-mx-tab="qing" onclick="setMatrixTab('qing')">表二：清初消極 vs. 清末積極</button>
+        <button type="button" class="btn" data-mx-tab="jp-policy" onclick="setMatrixTab('jp-policy')">表三：日治三階段統治策略</button>
+        <button type="button" class="btn" data-mx-tab="movements" onclick="setMatrixTab('movements')">表四：日治政治社會團體比較</button>
+      </div>
+
+      <div class="table-card" id="matrix-table-container"></div>
+    </section>
+
+    <!-- INTERACTIVE QUIZ SECTION -->
+    <section class="chapter-section" id="quiz-sec" aria-labelledby="quiz-heading">
+      <div class="dossier-bar">
+        <div class="dossier-bar-left">
+          <span class="index-num">08</span>
+          <span class="dossier-meta-zh" id="quiz-heading">高一歷史第二次月考實戰模擬測驗（18 題）</span>
+        </div>
+        <span class="dossier-meta">SELF-ASSESSMENT</span>
+      </div>
+      <h2 class="section-heading">考前實戰檢測與錯題解析</h2>
+      <p class="section-sub">涵蓋史料推論、名詞辨析與時序因果題，作答後立即顯示解析，並可篩選錯題反覆訂正。所有作答紀錄皆會自動保存。</p>
+
+      <div class="quiz-dashboard">
+        <div class="quiz-stats">
+          <div class="quiz-stat-item">
+            <span class="quiz-stat-label">已作答題數</span>
+            <span class="quiz-stat-val" id="quiz-answered-val">0 / 18</span>
+          </div>
+          <div class="quiz-stat-item">
+            <span class="quiz-stat-label">答對題數</span>
+            <span class="quiz-stat-val" id="quiz-correct-val">0</span>
+          </div>
+          <div class="quiz-stat-item">
+            <span class="quiz-stat-label">目前正確率</span>
+            <span class="quiz-stat-val" id="quiz-accuracy-val">—</span>
+          </div>
+        </div>
+        <div>
+          <button type="button" class="btn" id="quiz-reset-btn" onclick="resetQuiz(this)">重設所有測驗紀錄</button>
+        </div>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="測驗章節篩選">
+        <button type="button" class="btn btn-active" data-qz-filter="all" onclick="setQuizFilter('all')">全部 18 題</button>
+        <button type="button" class="btn" data-qz-filter="CH2-1" onclick="setQuizFilter('CH2-1')">CH2-1</button>
+        <button type="button" class="btn" data-qz-filter="CH2-2" onclick="setQuizFilter('CH2-2')">CH2-2</button>
+        <button type="button" class="btn" data-qz-filter="CH3-1" onclick="setQuizFilter('CH3-1')">CH3-1</button>
+        <button type="button" class="btn" data-qz-filter="CH3-2" onclick="setQuizFilter('CH3-2')">CH3-2</button>
+        <button type="button" class="btn" data-qz-filter="CH3-3" onclick="setQuizFilter('CH3-3')">CH3-3</button>
+        <button type="button" class="btn" data-qz-filter="wrong" onclick="setQuizFilter('wrong')">只看錯題</button>
+      </div>
+
+      <div class="quiz-list" id="quiz-list"></div>
+    </section>
+
+    <footer class="source-footer">
+      <div>
+        <strong>資料依據與教材範圍：</strong>依據何榮俊老師授課教材《CH2-1 大航海到清治時期的移民》、《CH2-2 日治到戰後的移民》、《CH3-1 清帝國的邊陲》、《CH3-2 日本殖民的現代化統治》、《CH3-3 日治時期的政治與社會運動》及 108 課綱高一歷史課本內容編整。
+      </div>
+      <span class="dossier-meta">EDITION · MIDTERM 02</span>
+    </footer>
+  </div>
+
+  <a class="btn btn-primary floating-top" href="#top" aria-label="回到頁面頂部">回到目錄 ↑</a>
+
+  <api-shim></api-shim>
+  <script>
+    // =========================================================
+    // 1. TIMELINE DATA (Backticks used for all string literals)
+    // =========================================================
+    const TIMELINE_EVENTS = [
+      {
+        year: `1624–1662`,
+        chapter: `CH2-1`,
+        category: `migration`,
+        title: `荷蘭東印度公司招募漢人來臺拓墾`,
+        desc: `荷人為發展稻米、蔗糖貿易，大規模招募東南沿海漢人渡海來臺從事農業開墾；1626–1642 西班牙則曾佔領北臺雞籠、淡水。`
+      },
+      {
+        year: `1661–1683`,
+        chapter: `CH2-1`,
+        category: `migration`,
+        title: `鄭氏時期推行「寓兵於農」軍墾制度`,
+        desc: `區分官田、私田與營盤田，將漢人農業拓墾由臺南向高屏、嘉南與彰化、北部部分據點推進。`
+      },
+      {
+        year: `1683–1684`,
+        chapter: `CH3-1`,
+        category: `qing`,
+        title: `臺灣棄留爭議與施琅〈恭陳臺灣棄留疏〉`,
+        desc: `1684 年康熙皇帝採納施琅建議將臺灣納入版圖，設一府三縣（隸福建省），並實施「為防臺而治臺」的消極政策。`
+      },
+      {
+        year: `18 世紀中葉`,
+        chapter: `CH2-1 / CH3-1`,
+        category: `migration`,
+        title: `渡臺禁令、羅漢腳與「有唐山公，無唐山媽」`,
+        desc: `男多女少形成羅漢腳階層與聘金、童養媳習俗；漢人男子多與平埔族女性通婚，宗族組織由祭祀「唐山祖」漸轉向「開臺祖」。`
+      },
+      {
+        year: `1721 / 1786 / 1862`,
+        chapter: `CH3-1`,
+        category: `qing`,
+        title: `清代三大民變：朱一貴、林爽文、戴潮春事件`,
+        desc: `因官吏貪瀆、班兵紀律差與會黨勢力引發民變；林爽文事件中清廷利用泉籍、粵籍客家人及平埔族聯合圍剿漳籍起事者。`
+      },
+      {
+        year: `1812`,
+        chapter: `CH3-1`,
+        category: `qing`,
+        title: `增設噶瑪蘭廳（今宜蘭地區）`,
+        desc: `因漢人移墾日多且常受海盜侵擾而增設，展現清代臺灣開發「由南而北、由西而東」及行政區劃落後於民間開發的特徵。`
+      },
+      {
+        year: `19 世紀中期`,
+        chapter: `CH2-1`,
+        category: `migration`,
+        title: `臺北新莊分類械鬥與客家族群遷徙`,
+        desc: `祖籍、姓氏、職業同行衝突引發械鬥，迫使新莊一帶弱勢客家族群陸續遷往桃園、新竹，未遷出者多隱藏身分。`
+      },
+      {
+        year: `1860 年代`,
+        chapter: `CH3-1`,
+        category: `qing`,
+        title: `臺灣開港通商與涉外糾紛頻起`,
+        desc: `外商深入後山「番地」走私貿易產生摩擦，加上外國船難頻傳（羅妹號事件），引發清廷對番地主權的危機。`
+      },
+      {
+        year: `1874`,
+        chapter: `CH3-1`,
+        category: `qing`,
+        title: `牡丹社事件與沈葆楨「開山撫番」`,
+        desc: `日本質疑清廷對番地主權而出兵；清廷派沈葆楨來臺加強防務、廢渡臺禁令並開始「開山撫番」，治臺轉趨積極。`
+      },
+      {
+        year: `1884–1885`,
+        chapter: `CH3-1`,
+        category: `qing`,
+        title: `清法戰爭與臺灣建省、劉銘傳推動新政`,
+        desc: `1885 年臺灣建省，劉銘傳任首任巡撫推動自強新政，行政區劃調整為三府一直隸州十一縣四廳，霧峰林朝棟與板橋林維源皆曾協助新政。`
+      },
+      {
+        year: `1895–1897`,
+        chapter: `CH2-2`,
+        category: `migration`,
+        title: `《馬關條約》臺灣人國籍抉擇`,
+        desc: `條約生效後 2 年內可選擇離臺或自動成為日本國民，多數人因經濟考量留臺，離臺者僅 6,400 多人（約占 0.23%）。`
+      },
+      {
+        year: `1896`,
+        chapter: `CH3-2`,
+        category: `jp-rule`,
+        title: `《六三法》確立總督專制與實施標準時間`,
+        desc: `臺灣人被排除於日本憲法保障外，總督獨攬行政、立法、司法與軍事權；同年引入標準時間培養守時習慣。`
+      },
+      {
+        year: `1898`,
+        chapter: `CH3-2`,
+        category: `jp-rule`,
+        title: `兒玉源太郎與後藤新平推行「無方針主義」`,
+        desc: `遵循生物演化原則，先調查風俗習慣、土地與戶口，結合警察與保甲壯丁團深入控制基層，奠定殖民經濟基礎。`
+      },
+      {
+        year: `1899 / 1910`,
+        chapter: `CH2-2`,
+        category: `migration`,
+        title: `日人私營「賀田村」失敗與首座官營「吉野村」設立`,
+        desc: `前期官營移民以東部為重心，花蓮吉野村因原屬阿美族七腳川社土地引發衝突，成效有限；1930 年代後期重心轉往西部彰化、高雄。`
+      },
+      {
+        year: `1914`,
+        chapter: `CH3-3`,
+        category: `movement`,
+        title: `林獻堂與板垣退助籌組「臺灣同化會」`,
+        desc: `主張消除日臺差別待遇，雖遭總督府解散，卻揭開日治時期非武力政治社會運動的序幕。`
+      },
+      {
+        year: `1915`,
+        chapter: `CH3-2`,
+        category: `jp-rule`,
+        title: `臺中中學校設立，保甲禁纏足與斷髮運動`,
+        desc: `臺籍士紳爭取設專收臺人的臺中中學校；同年保甲規約全面推動解纏足與斷髮，婦女得以投入生產與教育，地位提升。`
+      },
+      {
+        year: `1919–1922`,
+        chapter: `CH3-2`,
+        category: `jp-rule`,
+        title: `文官總督田健治郎「內地延長主義」與日臺共學`,
+        desc: `受一戰民族自決與大正民主影響，1919 改採「日臺融合、一視同仁」，1921 頒「法三號」，1922 公布新臺灣教育令實施中學以上「日臺共學」。`
+      },
+      {
+        year: `1920–1921`,
+        chapter: `CH3-3`,
+        category: `movement`,
+        title: `東京「新民會」、臺灣議會請願運動與「臺灣文化協會」`,
+        desc: `新民會要求撤廢六三法；隨即展開 15 次議會設置請願（自治主義）並創立文協，透過讀報社、演講會與夏季學校啟發民智。`
+      },
+      {
+        year: `1925–1928`,
+        chapter: `CH3-3`,
+        category: `movement`,
+        title: `二林事件、文協分裂、臺灣民眾黨與臺灣共產黨`,
+        desc: `1925 二林蔗農抗爭揭開農工運動；1927 文協左傾為新文協，蔣渭水與林獻堂另組第一個合法政黨「臺灣民眾黨」；1928 謝雪紅於上海成立臺共。`
+      },
+      {
+        year: `1930–1935`,
+        chapter: `CH3-3`,
+        category: `movement`,
+        title: `臺灣地方自治聯盟與 1935 年首次半數民選`,
+        desc: `1930 林獻堂等另組地方自治聯盟爭取民選；1931 總督府大舉搜捕臺共與異議者；1935 開放市會及街庄協議會員半數民選，具民主啟蒙意義。`
+      },
+      {
+        year: `1936–1937`,
+        chapter: `CH3-2`,
+        category: `jp-rule`,
+        title: `小林躋造三大方針與「皇民化運動」`,
+        desc: `因應戰爭提出皇民化、工業化、南進基地化；推動國語（日語）運動、神道教信仰、改日式姓名與志願兵制度。`
+      },
+      {
+        year: `1949`,
+        chapter: `CH2-2`,
+        category: `postwar`,
+        title: `國共內戰失利，中央政府與百萬軍民遷臺`,
+        desc: `在原有 600 萬人口基礎上，上百萬軍公教人員與眷屬來臺，形成眷村文化與榮民群體，省籍情結與身分證本籍註記影響深遠。`
+      },
+      {
+        year: `1953–1955`,
+        chapter: `CH2-2`,
+        category: `postwar`,
+        title: `東南亞撤退、一二三自由日與大陳義胞來臺`,
+        desc: `1953 富國島與泰緬邊境部分國軍撤臺；1954/1/23 韓戰 1 萬 4 千多反共義士抵臺；1955 大陳列島兩萬多軍民撤臺安置「大陳新村」。`
+      },
+      {
+        year: `1970s–1990s`,
+        chapter: `CH2-2`,
+        category: `postwar`,
+        title: `城鄉移民、新住民與國際移工注入多元文化`,
+        desc: `1970 年代工業化帶動農村人口湧向都市；1980 年代起外籍配偶（新住民）增多；1990 年代起引進東南亞國際移工從事勞動與看護。`
+      }
+    ];
+
+    // =========================================================
+    // 2. COMPARISON MATRICES DATA
+    // =========================================================
+    const MATRIX_TABS = {
+      migration: {
+        title: `歷代移民政策、開墾方式與族群互動比較表`,
+        headers: [`時期`, `主導政策 / 背景`, `開墾區域與代表案例`, `社會特徵與族群互動`],
+        rows: [
+          [`荷西時期 (1624–1662)`, `VOC 招募漢人耕作；西班牙北臺傳教貿易`, `臺南大員周邊種稻蔗；北臺雞籠、淡水`, `漢人成為農業主力，與原住民交易及衝突並存`],
+          [`鄭氏時期 (1661–1683)`, `「寓兵於農」軍墾制度`, `官田、私田、營盤田；擴及高屏、嘉南、彰化`, `奠定漢人農業社會基石，漢人勢力進一步向中南部擴張`],
+          [`清治時期 (1683–1895)`, `渡臺禁令、封山劃界（土牛紅線）與偷渡`, `由南而北、由西而東；1812 宜蘭噶瑪蘭廳`, `男多女少出現羅漢腳、聘金童養媳；分類械鬥（新莊客家人遷桃竹）；原漢通婚「有唐山公無唐山媽」；唐山祖轉開臺祖`],
+          [`日治時期 (1895–1945)`, `國籍抉擇（0.23% 離臺）；私營與官營農業移民`, `1899 賀田村失敗；1910 東部吉野村；1930s 轉西部彰化、高雄；客家人赴花東林田山`, `吉野村與七腳川社衝突；高雄築港吸納澎湖臺南人；臺籍菁英赴日求學、戰時赴滿洲與東南亞`],
+          [`戰後與當代 (1945–今)`, `1949 國共內戰遷臺；1950s 特殊撤退；工商業與跨國移動`, `眷村（岡山、明德新村）、大陳新村、榮民墾區與中橫/石門水庫；1970s 湧入都市工業區`, `省籍情結因本籍註記深化，後經就學就業通婚消融；1980s 新住民、1990s 東南亞國際移工注入多元文化`]
+        ]
+      },
+      qing: {
+        title: `清治前期（消極防臺）vs. 清治後期（積極治臺）與行政區劃演變`,
+        headers: [`比較面向`, `清治前期（1683–1874 前）`, `清治後期（1874–1895）`],
+        rows: [
+          [`政策基調`, `「為防臺而治臺」（防範臺灣成為反清基地與治安問題）`, `轉趨積極加強海防與近代化建設，強化主權統治`],
+          [`轉折背景`, `1683 鄭克塽降清，康熙採納施琅〈恭陳臺灣棄留疏〉納臺`, `1860s 開港通商外商入番地糾紛、船難涉外事件（羅妹號、1874 牡丹社事件）、1884 清法戰爭`],
+          [`重要措施`, `渡臺禁令、封山劃界、禁止築城、限制販鐵、官員輪調與班兵制`, `沈葆楨「開山撫番」並廢渡臺禁令；丁日昌推電報；1885 建省，劉銘傳推鐵路、郵電、撫墾等自強新政（後邵友濂因財政緊縮停擺）`],
+          [`內部挑戰`, `官吏貪瀆、班兵紀律差、羅漢腳與會黨引發三大民變（朱一貴、林爽文、戴潮春）`, `地方財政負擔沉重、開山撫番引發原住民反抗、列強覬覦臺灣`],
+          [`行政區劃`, `1684 一府三縣 → 雍正增設彰化、淡水、澎湖 → 1812 增噶瑪蘭廳`, `1875 沈葆楨設臺北府 → 1885 建省後調整為「三府一直隸州十一縣四廳」`]
+        ]
+      },
+      'jp-policy': {
+        title: `日治時期三階段統治政策演變總表（1895–1945）`,
+        headers: [`階段與年代`, `代表人物 / 國際背景`, `統治方針與法源`, `教育、經濟與社會措施`],
+        rows: [
+          [`一、殖民地特殊統治\n(1895–1919)`, `初期武裝抗日頻仍；乃木希典三段警備制失敗；1898 兒玉源太郎與後藤新平`, `《六三法》總督專制；「無方針主義」（生物學原則，調查舊慣與尊重傳統）`, `土地/戶口/舊慣調查、統一度量衡與幣制、鐵路港口建設；1915 設臺中中學校、保甲禁纏足與斷髮`],
+          [`二、內地延長主義\n(1919–1936)`, `一戰後民族自決思潮、日本大正民主時期；1919 首任文官總督田健治郎`, `「日臺融合，一視同仁」同化方針；1921 頒「法三號」（原則適用內地法律）`, `有限度允許政治結社；1922 新臺灣教育令實施中學以上「日臺共學」並增設實業學校`],
+          [`三、皇民化運動\n(1937–1945)`, `1929 經濟大恐慌與軍部抬頭、中日戰爭爆發；1936 武官總督小林躋造`, `三大方針：「皇民化、工業化、南進基地化」`, `1937 起強制推國語（日語）運動、神道教信仰、改日式姓名、志願兵制度，高壓戰時動員`]
+        ]
+      },
+      movements: {
+        title: `日治時期臺人政治與社會運動團體比較表（1914–1937）`,
+        headers: [`組織 / 運動名稱`, `年代與代表人物`, `核心訴求與活動方式`, `結果與歷史意義`],
+        rows: [
+          [`臺灣同化會`, `1914｜林獻堂、板垣退助`, `採同化主義，要求消除日臺差別待遇`, `遭總督府解散，但種下民族運動火種`],
+          [`新民會`, `1920｜東京臺灣留學生`, `啟發民智、主張撤廢《六三法》`, `由撤廢六三法進一步轉向自治主義路線`],
+          [`臺灣議會設置請願運動`, `1921–1934｜林獻堂、蔣渭水`, `設臺灣議會、爭取立法自治權（共 15 次請願）`, `1923 期成同盟會遭搜捕（治警事件），喚醒民間政治意識`],
+          [`臺灣文化協會 (文協)`, `1921｜林獻堂、蔣渭水、蔡培火`, `非武力文化啟蒙：讀報社、演講會、夏季學校`, `1927 因路線之爭分裂；左派連溫卿主導「新文協」，轉向無產階級農工運動`],
+          [`臺灣民眾黨`, `1927｜蔣渭水、林獻堂`, `廢鴉片專賣、爭取參政權；向國際聯盟控訴鴉片政策與霧社事件暴行`, `臺灣史上第一個合法政黨；後因蔣轉向農工路線分裂，1931 遭禁止`],
+          [`臺灣地方自治聯盟`, `1930｜林獻堂、蔡培火、楊肇嘉`, `單一目標推動地方自治、要求協議會員民選與議決權`, `促成 1935 第一屆市會及街庄協議會員半數民選（具民主啟蒙意義）`],
+          [`農工運動與臺灣共產黨`, `1925–1931｜李應章（二林）、簡吉（農民組合）、蔣渭水（工友總聯盟）、謝雪紅（臺共）`, `抗議製糖會社剝削；1928 上海成立臺共並漸主導農民組合`, `1931 總督府大規模搜捕臺共與異議者，政治社會運動幾近瓦解`]
+        ]
+      }
+    };
+
+    // =========================================================
+    // 3. QUIZ QUESTIONS (18 Curated Questions across all 5 Chapters)
+    // =========================================================
+    const QUIZ_QUESTIONS = [
+      {
+        id: `q1`,
+        chapter: `CH2-1`,
+        question: `清代臺灣移墾社會初期，因為官方實施某項禁令，導致來臺漢人多為年輕單身男子，社會上因而盛行「婚嫁重聘金」與「童養媳」的習俗。請問這項現象最直接源於下列何者？`,
+        options: [
+          `A. 實施班兵制且禁止官員攜眷`,
+          `B. 渡臺禁令限制渡海與攜帶家眷`,
+          `C. 封山劃界禁止漢人與原住民往來`,
+          `D. 清廷規定漢人必須與平埔族群通婚`
+        ],
+        answer: 1,
+        explanation: `清初實施「渡臺禁令」，限制申請照單且不准攜眷，造成男女比例嚴重失衡、成家不易，才衍伸出羅漢腳現象以及重聘金、童養媳與原漢通婚。`
+      },
+      {
+        id: `q2`,
+        chapter: `CH2-1`,
+        question: `關於清代臺灣「分類械鬥」的影響，學者研究指出 19 世紀中期某個北部商業聚落因族群械鬥頻仍，導致原本居於劣勢的客家族群陸續遷往桃園、新竹地區，未遷出者則多隱藏身分。請問這個聚落位於何處？`,
+        options: [
+          `A. 臺北新莊`,
+          `B. 彰化鹿港`,
+          `C. 臺南府城`,
+          `D. 宜蘭羅東`
+        ],
+        answer: 0,
+        explanation: `依據教材案例，19 世紀中期臺北新莊一帶族群械鬥頻仍，弱勢客家族群陸續遷往桃園、新竹地區，留在原地者則多隱藏身分融入閩南社會。`
+      },
+      {
+        id: `q3`,
+        chapter: `CH2-1`,
+        question: `清代臺灣漢人宗族組織從祭祀「唐山祖」逐漸轉變為祭祀「開臺祖」，此一轉變最能反映下列哪一種歷史意義？`,
+        options: [
+          `A. 漢人移民完全斷絕與原鄉的姓氏連結`,
+          `B. 血緣關係淡薄化，同姓互助的重要性提高`,
+          `C. 移民世代繁衍與財富累積後，轉向在地認同`,
+          `D. 清廷禁止民眾祭祀大陸祖先而強制改制`
+        ],
+        answer: 2,
+        explanation: `「唐山祖」成員未必有血緣關係，重同姓互助；當家族世代繁衍、人口與財富增加，改祭祀來臺第一代祖先的「開臺祖」並建祠堂家廟，反映了移民紮根並轉向在地認同。`
+      },
+      {
+        id: `q4`,
+        chapter: `CH2-1`,
+        question: `清代「一天下，兩林家」是臺灣重要地方家族勢力的代表。下列關於板橋林家與霧峰林家的敘述，何者正確？`,
+        options: [
+          `A. 霧峰林家林平侯曾參與平定戴潮春事件`,
+          `B. 板橋林家林維源曾任劉銘傳的撫墾大臣`,
+          `C. 霧峰林家以創設「林本源」商號廣置田產起家`,
+          `D. 板橋林家林朝棟曾率領臺勇渡海平定太平天國`
+        ],
+        answer: 1,
+        explanation: `板橋林家的林平侯透過捐納為官並創設「林本源」商號，後人林維源曾擔任劉銘傳的撫墾大臣協助新政；林文察（平定戴潮春與太平天國）與林朝棟（清法戰爭立功）則屬於霧峰林家。`
+      },
+      {
+        id: `q5`,
+        chapter: `CH2-2`,
+        question: `1895 年《馬關條約》生效後，給予臺澎住民兩年的國籍選擇期，但期限屆滿選擇離開臺灣者僅約 6,400 多人（占總人口約 0.23%）。造成絕大多數臺灣人留下的最主要因素為何？`,
+        options: [
+          `A. 臺灣人民普遍認同日本帝國的現代化建設`,
+          `B. 清廷明令禁止離開臺灣的人口返回中國大陸`,
+          `C. 受到臺灣田產家業等經濟因素的現實考量`,
+          `D. 日本總督府在 1895 年即已全面封鎖港口`
+        ],
+        answer: 2,
+        explanation: `根據史料與課本記載，大多數臺灣人因田產、生計等經濟因素考量無法輕易遷出，被迫留臺而自動成為日本殖民地人民。`
+      },
+      {
+        id: `q6`,
+        chapter: `CH2-2`,
+        question: `日治時期總督府曾推動兩波官營日本農業移民計畫。關於「前期（1910 年代）」與「後期（1930 年代）」移民村的比較，下列何者正確？`,
+        options: [
+          `A. 前期首座官營移民村為花蓮壽豐「賀田村」`,
+          `B. 後期因東部河川整治完成，將重心由西部移往花東`,
+          `C. 前期花蓮「吉野村」因位於阿美族七腳川社舊地而引發衝突`,
+          `D. 後期主要是為了解決日本神戶大地震後的災民安置`
+        ],
+        answer: 2,
+        explanation: `賀田村（1899）為私營移民村且失敗；首座官營為 1910 年花蓮吉野村，因設在阿美族七腳川社所在地而引發衝突。1930 年代後期（關東大地震、經濟大恐慌後）重心是移往完成河川整治的「西部」彰化、高雄等地。`
+      },
+      {
+        id: `q7`,
+        chapter: `CH2-2`,
+        question: `1950 年代有多批海外或外島軍民撤退來臺。若某位長輩回憶：「當年美國軍艦協助我們全家從浙江外海島嶼緊急撤離來臺，政府特別興建新村安置我們。」這位長輩最可能屬於下列哪一個群體？`,
+        options: [
+          `A. 泰緬孤軍`,
+          `B. 韓戰反共義士`,
+          `C. 大陳義胞`,
+          `D. 越南富國島國軍`
+        ],
+        answer: 2,
+        explanation: `1955 年一江山島與大陳島危急時，美軍協助撤出大陳列島軍民二萬多人來臺，政府於各地興建「大陳新村」安置，稱為「大陳義胞」。`
+      },
+      {
+        id: `q8`,
+        chapter: `CH2-2`,
+        question: `戰後臺灣的族群與人口流動歷經數次轉折。下列敘述何者「不符合」史實？`,
+        options: [
+          `A. 國民身分證曾註記本籍（省縣），間接影響資源分配與省籍認同`,
+          `B. 1950 年代政府動員退役榮民開鑿中橫公路、興建桃園石門水庫`,
+          `C. 1970 年代後工商業起飛，都市人口外流農村促使城鄉均衡發展`,
+          `D. 1980 年代起外籍配偶（新住民）增多，1990 年代起陸續引進國際移工`
+        ],
+        answer: 2,
+        explanation: `1970 年代以後受工商業發展影響，是「農村人口大量移往都市與工業區」，雖加速都市發展，卻造成城鄉發展不平衡與農村人口減少老化。`
+      },
+      {
+        id: `q9`,
+        chapter: `CH3-1`,
+        question: `1683 年施琅上〈恭陳臺灣棄留疏〉力主將臺灣納入清帝國版圖，其最核心的戰略與國防理由為何？`,
+        options: [
+          `A. 臺灣煤炭與樟腦蘊藏量極高，有助清廷發展工業`,
+          `B. 臺灣地理位置優越，若棄之易遭外國或盜賊據守而威脅東南四省`,
+          `C. 應立即開放漢人攜眷大舉開墾東部後山，以擴張領土`,
+          `D. 臺灣適合建造大型海軍船塢，可作為進攻日本的前哨站`
+        ],
+        answer: 1,
+        explanation: `施琅指出臺灣孤懸海外但地理位置優越，土地肥沃可養兵，若放棄臺灣將被不法之徒或外國勢力佔據，對東南沿海四省造成極大禍害。`
+      },
+      {
+        id: `q10`,
+        chapter: `CH3-1`,
+        question: `清乾隆年間林爽文事件波及臺灣西部各地，清廷除了派遣福康安率大軍渡海來臺外，在地方上還採取了何種策略成功平定事件？`,
+        options: [
+          `A. 立即撤銷渡臺禁令並宣布臺灣建省`,
+          `B. 聯合泉籍人士、粵籍客家人與平埔族共同圍剿漳籍起事者`,
+          `C. 委託霧峰林家林朝棟與劉銘傳開山撫番`,
+          `D. 請求荷蘭與英國商船封鎖臺灣西部港口`
+        ],
+        answer: 1,
+        explanation: `清廷面對民變常利用不同族群間的對立意識平亂。林爽文起事成員以福建漳州籍為主，清廷便聯合泉籍、粵籍客家人與平埔族一同圍剿。`
+      },
+      {
+        id: `q11`,
+        chapter: `CH3-1`,
+        question: `比較清代臺灣行政區劃的擴張：1812 年增設「噶瑪蘭廳」，與 1885 年臺灣建省後調整為「三府一直隸州十一縣四廳」。兩者共同反映了清代臺灣何種歷史特徵？`,
+        options: [
+          `A. 行政區劃始終超前民間拓墾腳步，以引導人口遷徙`,
+          `B. 臺灣的開發趨勢是由北而南、由東而西逐步推進`,
+          `C. 行政區劃常落後於民間開發，且依治安與海防需求逐步增設`,
+          `D. 清廷在 1812 年以前即已將東部納入直接設縣管理`
+        ],
+        answer: 2,
+        explanation: `清代臺灣開發趨勢是「由南而北、由西而東」，且地方行政區劃始終落後於民間的開發；往往因漢人移墾日增、民變、海盜或涉外海防危機才增設廳縣。`
+      },
+      {
+        id: `q12`,
+        chapter: `CH3-2`,
+        question: `1898 年兒玉源太郎任臺灣總督、後藤新平任民政長官後，一改先前乃木希典「三段警備制」的困境，提出遵循「生物演化原則」的「無方針主義」。此一政策的核心做法為何？`,
+        options: [
+          `A. 立即將日本憲法與民法全面直接套用於臺灣社會`,
+          `B. 宣布放棄殖民臺灣，將地方自治權交還臺灣仕紳`,
+          `C. 先進行舊慣、土地與戶口調查，順應環境建立有效的殖民統治`,
+          `D. 全面禁止臺灣傳統宗教與語言，強制改用日式姓名`
+        ],
+        answer: 2,
+        explanation: `後藤新平的「無方針主義」並非沒有目標，而是反對生搬硬套日本法律，主張先對臺灣風俗習慣、土地與戶口進行科學調查，進而建立有效控制與殖民經濟基礎。`
+      },
+      {
+        id: `q13`,
+        chapter: `CH3-2`,
+        question: `日治時期的保甲組織源自清代舊制，卻被總督府改造成極具效率的基層控制工具。下列哪一項「不屬於」保甲與壯丁團在日治時期的功能？`,
+        options: [
+          `A. 協助警察維持治安、壓制抗日勢力與推行連坐`,
+          `B. 配合執行禁纏足、斷髮運動及社區捕鼠清潔等衛生事務`,
+          `C. 在戰爭時期作為政府動員勞役與物資配給的基層組織`,
+          `D. 作為臺灣人選舉總督與制定《六三法》的民主代議機構`
+        ],
+        answer: 3,
+        explanation: `保甲與壯丁團是總督府深入基層的控制與動員工具（治安、衛生、革除舊習、消防勞役、戰時動員），並非民主代議機構。`
+      },
+      {
+        id: `q14`,
+        chapter: `CH3-2`,
+        question: `1919 年首任文官總督田健治郎來臺後，宣布改採「內地延長主義」，並在 1922 年公布新臺灣教育令。請問此一時期與 1937 年後的「皇民化運動」相比，兩者的主要差異為何？`,
+        options: [
+          `A. 內地延長主義時期實施「日臺共學」並有限度允許政治結社；皇民化則屬高壓戰時同化動員`,
+          `B. 內地延長主義時期完全禁止臺灣人接受中學教育；皇民化才開放臺中中學校`,
+          `C. 內地延長主義由軍人小林躋造推動；皇民化則由後藤新平主導`,
+          `D. 內地延長主義推動改日式姓名與志願兵；皇民化主張尊重臺灣傳統風俗`
+        ],
+        answer: 0,
+        explanation: `1919–1936 內地延長主義受一戰民族自決與大正民主影響，採「日臺融合、一視同仁」的懷柔同化（法三號、1922 日臺共學、有限度結社）；1937 年後小林躋造推皇民化則是為配合中日戰爭動員的高壓同化（國語、神道教、改姓名、志願兵）。`
+      },
+      {
+        id: `q15`,
+        chapter: `CH3-3`,
+        question: `1920 年代受新式教育的臺灣青年知識分子面臨「同化」或「自治」的抉擇。下列哪一個組織的訴求最能代表從「爭取同化平權」轉向「強調臺灣特殊性與自治主義」的關鍵轉折？`,
+        options: [
+          `A. 1914 年林獻堂等人籌組的「臺灣同化會」`,
+          `B. 1920 年東京留學生組成的「新民會」與隨後展開的「臺灣議會設置請願運動」`,
+          `C. 1928 年謝雪紅等人在上海成立的「臺灣共產黨」`,
+          `D. 1936 年總督府推動的「南進基地化」運動`
+        ],
+        answer: 1,
+        explanation: `1914 同化會仍希望透過同化消除差別待遇；1920 新民會主張撤廢六三法後，部分人士反對被日本同化，轉向強調臺灣特殊性的「臺灣議會設置請願運動」，邁向自治主義理想。`
+      },
+      {
+        id: `q16`,
+        chapter: `CH3-3`,
+        question: `1927 年「臺灣文化協會」因路線之爭發生分裂。關於分裂後各組織的發展，下列配對何者「正確」？`,
+        options: [
+          `A. 連溫卿主導「新文協」——繼續堅持跨階級的議會請願路線`,
+          `B. 蔣渭水、林獻堂另組「臺灣民眾黨」——成為臺灣史上第一個合法政黨`,
+          `C. 林獻堂等組「臺灣地方自治聯盟」——主張武裝推翻總督府並建立共產政權`,
+          `D. 謝雪紅成立「臺灣工友總聯盟」——向國際聯盟控訴霧社事件暴行`
+        ],
+        answer: 1,
+        explanation: `1927 年左傾的連溫卿主導「新文協」，轉向無產階級與農工運動；蔣渭水、林獻堂另組「臺灣民眾黨」（史上第一個合法政黨），向國聯控訴鴉片政策與霧社事件；後林獻堂等於 1930 另組「臺灣地方自治聯盟」專注地方民選；臺灣工友總聯盟為蔣渭水所組。`
+      },
+      {
+        id: `q17`,
+        chapter: `CH3-3`,
+        question: `1925 年彰化地區爆發「二林事件」，成為日治時期全臺農工抗爭運動的重要導火線。此一事件發生的直接導因為何？`,
+        options: [
+          `A. 臺灣共產黨發動全島總罷工與武裝起義`,
+          `B. 總督府強制徵收二林地區水田改建為機場`,
+          `C. 李應章等人組織二林蔗農組合，要求與製糖會社談判甘蔗收購價格引發衝突`,
+          `D. 日本政府禁止二林地區農民參與 1935 年市會議員選舉`
+        ],
+        answer: 2,
+        explanation: `日治時期製糖會社長期掌握蔗糖生產優勢並剝削蔗農，1925 年李應章等人組織「二林蔗農組合」爭取甘蔗收購價格談判而與警方衝突，引發後續簡吉「臺灣農民組合」等一連串農工運動。`
+      },
+      {
+        id: `q18`,
+        chapter: `CH3-3`,
+        question: `1935 年日本總督府開放第一屆市會及街庄協議會員半數民選。歷史學者對此選舉的評價通常是「有限制的突破」，其原因在於下列何者？`,
+        options: [
+          `A. 雖僅開放半數民選、有財產年齡性別限制且無實質議決權，卻是臺人首次實際參與現代民主選舉`,
+          `B. 雖然全體議員皆由普選產生，但總督府不允許臺灣民眾黨候選人參選`,
+          `C. 該次選舉賦予地方議會完全獨立的立法權，已達成臺灣議會設置請願目標`,
+          `D. 該次選舉僅限日本內地人投票，臺灣人完全沒有被選舉權與投票權`
+        ],
+        answer: 0,
+        explanation: `1935 年選舉設有財產、年齡與性別等嚴格限制，僅半數民選且協議會議員沒有實質議決權；但卻是臺灣人第一次實際參與現代民主政治選舉運作，極具民主啟蒙意義。`
+      }
+    ];
+
+    // =========================================================
+    // 4. APPLICATION STATE (Synced with notebookAppApi)
+    // =========================================================
+    const CHAPTER_IDS = [`CH2-1`, `CH2-2`, `CH3-1`, `CH3-2`, `CH3-3`];
+
+    let appState = {
+      reviewedChapters: [],
+      recallMode: false,
+      timelineFilter: `all`,
+      matrixTab: `migration`,
+      quizFilter: `all`,
+      quizAnswers: {} // { q1: 1, q2: 0, ... }
+    };
+
+    async function persistState() {
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.setAppState === `function`) {
+          await window.notebookAppApi.setAppState(appState);
+        }
+      } catch (e) {
+        // Ignore persistence errors in standalone preview
+      }
+    }
+
+    // =========================================================
+    // 5. ACTIVE RECALL MASKING (Hoisted functions)
+    // =========================================================
+    function applyRecallModeUI() {
+      const btn = document.getElementById(`recall-toggle-btn`);
+      const resetBtn = document.getElementById(`recall-reset-btn`);
+      if (appState.recallMode) {
+        document.body.classList.add(`recall-active`);
+        if (btn) {
+          btn.textContent = `關閉考前盲測遮罩`;
+          btn.classList.add(`btn-active`);
+          btn.classList.remove(`btn-gold`);
+        }
+        if (resetBtn) resetBtn.style.display = `inline-flex`;
+      } else {
+        document.body.classList.remove(`recall-active`);
+        if (btn) {
+          btn.textContent = `開啟考前盲測遮罩`;
+          btn.classList.remove(`btn-active`);
+          btn.classList.add(`btn-gold`);
+        }
+        if (resetBtn) resetBtn.style.display = `none`;
+      }
+    }
+
+    function toggleRecallMode() {
+      appState.recallMode = !appState.recallMode;
+      applyRecallModeUI();
+      persistState();
+    }
+
+    function resetRevealedKeys() {
+      const keys = document.querySelectorAll(`.exam-key.revealed`);
+      keys.forEach(function(el) {
+        el.classList.remove(`revealed`);
+      });
+    }
+
+    function setupExamKeyListeners() {
+      const keys = document.querySelectorAll(`.exam-key`);
+      keys.forEach(function(el) {
+        el.addEventListener(`click`, function() {
+          if (!appState.recallMode) return;
+          el.classList.toggle(`revealed`);
+        });
+        el.addEventListener(`keydown`, function(e) {
+          if (!appState.recallMode) return;
+          if (e.key === `Enter` || e.key === ` `) {
+            e.preventDefault();
+            el.classList.toggle(`revealed`);
+          }
+        });
+      });
+    }
+
+    // =========================================================
+    // 6. CHAPTER MASTERY TRACKING
+    // =========================================================
+    function renderProgressUI() {
+      const count = appState.reviewedChapters.length;
+      const pct = Math.round((count / CHAPTER_IDS.length) * 100);
+
+      const headerBadge = document.getElementById(`header-progress-badge`);
+      if (headerBadge) headerBadge.textContent = `複習進度：${count} / ${CHAPTER_IDS.length} 章`;
+
+      const fill = document.getElementById(`mastery-progress-fill`);
+      if (fill) fill.style.width = `${pct}%`;
+
+      const text = document.getElementById(`mastery-progress-text`);
+      if (text) text.textContent = `${pct}% 完成`;
+
+      CHAPTER_IDS.forEach(function(ch) {
+        const isDone = appState.reviewedChapters.indexOf(ch) !== -1;
+        const card = document.querySelector(`.overview-card[data-chapter="${ch}"]`);
+        const badge = document.getElementById(`badge-${ch}`);
+        const btn = document.getElementById(`review-btn-${ch}`);
+
+        if (card) {
+          if (isDone) card.classList.add(`is-reviewed`);
+          else card.classList.remove(`is-reviewed`);
+        }
+        if (badge) {
+          badge.textContent = isDone ? `已精熟` : `待複習`;
+          if (isDone) badge.classList.add(`done`);
+          else badge.classList.remove(`done`);
+        }
+        if (btn) {
+          btn.textContent = isDone ? `已標記 ${ch} 精熟（點擊取消）` : `標記 ${ch} 為已精熟`;
+          if (isDone) btn.classList.add(`btn-done`);
+          else btn.classList.remove(`btn-done`);
+        }
+      });
+    }
+
+    function toggleChapterReview(chapterId) {
+      const idx = appState.reviewedChapters.indexOf(chapterId);
+      if (idx === -1) {
+        appState.reviewedChapters.push(chapterId);
+      } else {
+        appState.reviewedChapters.splice(idx, 1);
+      }
+      renderProgressUI();
+      persistState();
+    }
+
+    // =========================================================
+    // 7. TIMELINE RENDERING
+    // =========================================================
+    function setTimelineFilter(filter) {
+      appState.timelineFilter = filter;
+      renderTimeline();
+      persistState();
+    }
+
+    function renderTimeline() {
+      const btns = document.querySelectorAll(`[data-tl-filter]`);
+      btns.forEach(function(b) {
+        if (b.dataset.tlFilter === appState.timelineFilter) {
+          b.classList.add(`btn-active`);
+        } else {
+          b.classList.remove(`btn-active`);
+        }
+      });
+
+      const listEl = document.getElementById(`timeline-list`);
+      if (!listEl) return;
+
+      const filtered = TIMELINE_EVENTS.filter(function(ev) {
+        return appState.timelineFilter === `all` || ev.category === appState.timelineFilter;
+      });
+
+      listEl.innerHTML = filtered.map(function(ev) {
+        return `
+          <div class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-meta">
+              <span class="timeline-year">${ev.year}</span>
+              <span class="timeline-chapter">${ev.chapter}</span>
+            </div>
+            <h3 class="timeline-title">${ev.title}</h3>
+            <p class="timeline-desc">${ev.desc}</p>
+          </div>
+        `;
+      }).join(``);
+    }
+
+    // =========================================================
+    // 8. COMPARISON MATRICES RENDERING
+    // =========================================================
+    function setMatrixTab(tabKey) {
+      appState.matrixTab = tabKey;
+      renderMatrix();
+      persistState();
+    }
+
+    function renderMatrix() {
+      const btns = document.querySelectorAll(`[data-mx-tab]`);
+      btns.forEach(function(b) {
+        if (b.dataset.mxTab === appState.matrixTab) {
+          b.classList.add(`btn-active`);
+        } else {
+          b.classList.remove(`btn-active`);
+        }
+      });
+
+      const container = document.getElementById(`matrix-table-container`);
+      if (!container) return;
+
+      const data = MATRIX_TABS[appState.matrixTab] || MATRIX_TABS.migration;
+      const thHtml = data.headers.map(function(h) {
+        return `<th scope="col">${h}</th>`;
+      }).join(``);
+
+      const rowsHtml = data.rows.map(function(row) {
+        const cells = row.map(function(cell, idx) {
+          const safeCell = cell.replace(/\n/g, `<br>`);
+          return idx === 0
+            ? `<td class="table-lead">${safeCell}</td>`
+            : `<td>${safeCell}</td>`;
+        }).join(``);
+        return `<tr>${cells}</tr>`;
+      }).join(``);
+
+      container.innerHTML = `
+        <h3 style="margin: 0 0 var(--space-md); font-size: 1.15rem;">${data.title}</h3>
+        <table class="data-table">
+          <thead><tr>${thHtml}</tr></thead>
+          <tbody>${rowsHtml}</tbody>
+        </table>
+      `;
+    }
+
+    // =========================================================
+    // 9. QUIZ ENGINE
+    // =========================================================
+    function setQuizFilter(filter) {
+      appState.quizFilter = filter;
+      renderQuiz();
+      persistState();
+    }
+
+    function answerQuiz(questionId, optionIndex) {
+      appState.quizAnswers[questionId] = optionIndex;
+      renderQuiz();
+      persistState();
+    }
+
+    function resetQuiz(btn) {
+      if (btn && btn.dataset.armed !== `true`) {
+        btn.dataset.armed = `true`;
+        btn.textContent = `再次點擊確認清空作答`;
+        btn.classList.add(`btn-gold`);
+        setTimeout(function() {
+          if (btn.dataset.armed === `true`) {
+            btn.dataset.armed = `false`;
+            btn.textContent = `重設所有測驗紀錄`;
+            btn.classList.remove(`btn-gold`);
+          }
+        }, 4000);
+        return;
+      }
+      if (btn) {
+        btn.dataset.armed = `false`;
+        btn.textContent = `重設所有測驗紀錄`;
+        btn.classList.remove(`btn-gold`);
+      }
+      appState.quizAnswers = {};
+      if (appState.quizFilter === `wrong`) appState.quizFilter = `all`;
+      renderQuiz();
+      persistState();
+    }
+
+    function renderQuiz() {
+      // Update filter buttons
+      const btns = document.querySelectorAll(`[data-qz-filter]`);
+      btns.forEach(function(b) {
+        if (b.dataset.qzFilter === appState.quizFilter) {
+          b.classList.add(`btn-active`);
+        } else {
+          b.classList.remove(`btn-active`);
+        }
+      });
+
+      // Compute score stats across all 18 questions
+      let answeredCount = 0;
+      let correctCount = 0;
+      QUIZ_QUESTIONS.forEach(function(q) {
+        if (typeof appState.quizAnswers[q.id] === `number`) {
+          answeredCount++;
+          if (appState.quizAnswers[q.id] === q.answer) {
+            correctCount++;
+          }
+        }
+      });
+
+      const answeredEl = document.getElementById(`quiz-answered-val`);
+      const correctEl = document.getElementById(`quiz-correct-val`);
+      const accEl = document.getElementById(`quiz-accuracy-val`);
+      if (answeredEl) answeredEl.textContent = `${answeredCount} / ${QUIZ_QUESTIONS.length}`;
+      if (correctEl) correctEl.textContent = `${correctCount}`;
+      if (accEl) {
+        accEl.textContent = answeredCount > 0 ? `${Math.round((correctCount / answeredCount) * 100)}%` : `—`;
+      }
+
+      const listEl = document.getElementById(`quiz-list`);
+      if (!listEl) return;
+
+      const filtered = QUIZ_QUESTIONS.filter(function(q) {
+        if (appState.quizFilter === `all`) return true;
+        if (appState.quizFilter === `wrong`) {
+          const picked = appState.quizAnswers[q.id];
+          return typeof picked === `number` && picked !== q.answer;
+        }
+        return q.chapter === appState.quizFilter;
+      });
+
+      if (filtered.length === 0) {
+        listEl.innerHTML = `
+          <div class="empty-state">
+            <p style="margin: 0 0 var(--space-md);"><strong>目前沒有錯題紀錄！</strong>若是尚未開始作答，請切換至「全部 18 題」或指定章節開始自我檢測。</p>
+            <button type="button" class="btn btn-primary" onclick="setQuizFilter('all')">檢視全部 18 題</button>
+          </div>
+        `;
+        return;
+      }
+
+      listEl.innerHTML = filtered.map(function(q, idx) {
+        const picked = appState.quizAnswers[q.id];
+        const hasAnswered = typeof picked === `number`;
+        const isCorrect = hasAnswered && picked === q.answer;
+        const qNum = QUIZ_QUESTIONS.indexOf(q) + 1;
+
+        const optionsHtml = q.options.map(function(opt, optIdx) {
+          let cls = `quiz-opt-btn`;
+          if (hasAnswered) {
+            if (optIdx === q.answer) cls += ` is-correct`;
+            else if (optIdx === picked) cls += ` is-wrong`;
+          }
+          const letter = opt.slice(0, 2);
+          const body = opt.slice(2).trim();
+          return `
+            <button type="button" class="${cls}" onclick="answerQuiz('${q.id}', ${optIdx})">
+              <span class="opt-letter">${letter}</span>
+              <span>${body}</span>
+            </button>
+          `;
+        }).join(``);
+
+        const expHtml = hasAnswered ? `
+          <div class="quiz-explanation ${isCorrect ? `is-success` : `is-error`}">
+            <strong>${isCorrect ? `作答正確！` : `觀念再釐清（正確答案：${[`A`, `B`, `C`, `D`][q.answer]}）`}</strong>
+            <div style="margin-top: var(--space-xs);">${q.explanation}</div>
+          </div>
+        ` : ``;
+
+        return `
+          <article class="quiz-card">
+            <div class="quiz-card-header">
+              <span class="index-num">Q${String(qNum).padStart(2, `0`)}</span>
+              <span class="concept-tag">${q.chapter}</span>
+            </div>
+            <p class="quiz-q-text">${q.question}</p>
+            <div class="quiz-options">${optionsHtml}</div>
+            ${expHtml}
+          </article>
+        `;
+      }).join(``);
+    }
+
+    // =========================================================
+    // 10. INITIALIZATION
+    // =========================================================
+    async function initApp() {
+      setupExamKeyListeners();
+
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.getAppState === `function`) {
+          const saved = await window.notebookAppApi.getAppState();
+          if (saved && typeof saved === `object`) {
+            if (Array.isArray(saved.reviewedChapters)) appState.reviewedChapters = saved.reviewedChapters;
+            if (typeof saved.recallMode === `boolean`) appState.recallMode = saved.recallMode;
+            if (typeof saved.timelineFilter === `string`) appState.timelineFilter = saved.timelineFilter;
+            if (typeof saved.matrixTab === `string`) appState.matrixTab = saved.matrixTab;
+            if (typeof saved.quizFilter === `string`) appState.quizFilter = saved.quizFilter;
+            if (saved.quizAnswers && typeof saved.quizAnswers === `object`) appState.quizAnswers = saved.quizAnswers;
+          }
+        }
+      } catch (e) {
+        // Fallback to default state
+      }
+
+      applyRecallModeUI();
+      renderProgressUI();
+      renderTimeline();
+      renderMatrix();
+      renderQuiz();
+
+      if (window.notebookAppApi && typeof window.notebookAppApi.notifyAppReady === `function`) {
+        window.notebookAppApi.notifyAppReady();
+      }
+    }
+
+    if (document.readyState === `loading`) {
+      document.addEventListener(`DOMContentLoaded`, initApp);
+    } else {
+      initApp();
+    }
+  </script>
+</body>
+</html>
